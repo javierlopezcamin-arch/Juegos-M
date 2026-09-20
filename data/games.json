@@ -1,0 +1,415 @@
+{
+  "version": 1,
+  "themes": [
+    {
+      "id": "concentracion",
+      "name": "Concentración",
+      "color": "#5B8DB8",
+      "subtitle": "Volver a lo que tengo delante"
+    },
+    {
+      "id": "creatividad",
+      "name": "Creatividad",
+      "color": "#E08A3C",
+      "subtitle": "Inventar sin que nadie corrija"
+    },
+    {
+      "id": "gratitud",
+      "name": "Gratitud",
+      "color": "#6FA57C",
+      "subtitle": "Darse cuenta de lo que ya hay"
+    },
+    {
+      "id": "viaje",
+      "name": "Viaje",
+      "color": "#8A6FB0",
+      "subtitle": "Irse lejos sin moverse"
+    }
+  ],
+  "games": [
+    {
+      "id": "conc-cazador-de-sonidos",
+      "theme": "concentracion",
+      "title": "Cazador de sonidos",
+      "duration": 8,
+      "script": "Ponte cómodo y cierra los ojos. Durante un rato vas a escuchar todo lo que suena a tu alrededor, sin buscar nada en concreto. Cada vez que reconozcas un sonido nuevo, cuéntalo en silencio. Cuando llegues a cinco, abre los ojos despacio y dilos en voz alta, uno detrás de otro.",
+      "steps": [
+        "Siéntate cómodo y cierra los ojos.",
+        "Cuenta en silencio cada sonido distinto que oigas.",
+        "Al llegar a cinco, abre los ojos y nómbralos en voz alta."
+      ]
+    },
+    {
+      "id": "conc-respiracion-cuadrada",
+      "theme": "concentracion",
+      "title": "Respiración cuadrada",
+      "duration": 8,
+      "script": "Vas a dibujar un cuadrado con tu respiración. Toma aire contando hasta cuatro. Aguanta contando hasta cuatro. Suelta el aire contando hasta cuatro. Y espera, con los pulmones vacíos, contando hasta cuatro otra vez. Ese es un lado, otro lado, otro y otro. Repite el cuadrado seis veces sin prisa.",
+      "steps": [
+        "Toma aire contando hasta cuatro.",
+        "Aguanta cuatro, suelta cuatro, espera cuatro.",
+        "Repite el cuadrado seis veces."
+      ]
+    },
+    {
+      "id": "conc-la-mano-lenta",
+      "theme": "concentracion",
+      "title": "La mano lenta",
+      "duration": 10,
+      "script": "Pon una mano delante de ti, con la palma hacia arriba. Vas a llevarla hasta tu hombro tan despacio que casi no se note el movimiento. Tan despacio que si alguien te mirase, dudaría de si te estás moviendo. Si tu cabeza se va a otro sitio, no pasa nada, vuelve a mirar la mano. Cuando llegues al hombro, hazlo de vuelta.",
+      "steps": [
+        "Pon una mano delante, con la palma hacia arriba.",
+        "Llévala al hombro tan despacio que casi no se note.",
+        "Cuando llegues, vuelve al punto de partida igual de lento."
+      ]
+    },
+    {
+      "id": "conc-cuenta-atras-con-trampa",
+      "theme": "concentracion",
+      "title": "Cuenta atrás con trampa",
+      "duration": 10,
+      "script": "Vas a contar hacia atrás desde treinta hasta cero, en voz alta. La trampa es que los números acabados en cero o en cinco no se dicen: se dan con una palmada. Si te equivocas, no pasa nada, vuelves a empezar desde treinta. La idea no es acertar, es darte cuenta del momento exacto en que tu cabeza se despista.",
+      "steps": [
+        "Cuenta en voz alta desde treinta hasta cero.",
+        "Los números acabados en cero o cinco se sustituyen por una palmada.",
+        "Si te equivocas, empieza otra vez desde treinta."
+      ]
+    },
+    {
+      "id": "conc-el-objeto-invisible",
+      "theme": "concentracion",
+      "title": "El objeto invisible",
+      "duration": 12,
+      "script": "Elige un objeto que tengas cerca y míralo durante un minuto entero, como si tuvieras que dibujarlo de memoria después. Fíjate en los bordes, en las marcas, en las partes que nunca miras. Luego cierra los ojos y descríbelo en voz alta con todo el detalle que puedas. Al terminar, ábrelos y comprueba qué se te había escapado.",
+      "steps": [
+        "Elige un objeto cercano y obsérvalo un minuto entero.",
+        "Cierra los ojos y descríbelo en voz alta con todo detalle.",
+        "Abre los ojos y busca lo que se te había escapado."
+      ]
+    },
+    {
+      "id": "conc-pies-en-el-suelo",
+      "theme": "concentracion",
+      "title": "Pies en el suelo",
+      "duration": 8,
+      "script": "Descálzate si puedes y apoya bien los dos pies en el suelo. Lleva la atención al pie derecho: al talón, a la planta, a cada dedo por separado. Luego al pie izquierdo, igual de despacio. Después nota los dos a la vez, como si fueran raíces. Termina moviendo los dedos y estirándote.",
+      "steps": [
+        "Apoya los dos pies en el suelo, mejor descalzo.",
+        "Recorre con la atención el pie derecho y luego el izquierdo.",
+        "Nota los dos a la vez antes de mover los dedos y estirarte."
+      ]
+    },
+    {
+      "id": "conc-el-hilo-del-dibujo",
+      "theme": "concentracion",
+      "title": "El hilo del dibujo",
+      "duration": 12,
+      "script": "Coge un papel y algo para pintar. Vas a hacer un dibujo sin levantar nunca la punta del papel: una sola línea continua, del principio al final. Ve despacio, al ritmo de tu respiración. No importa qué salga. Cuando decidas que está terminado, levanta la mano y mira lo que ha aparecido.",
+      "steps": [
+        "Coge papel y algo para pintar.",
+        "Dibuja con una sola línea, sin levantar la punta del papel.",
+        "Ve al ritmo de tu respiración y mira el resultado al terminar."
+      ]
+    },
+    {
+      "id": "conc-la-vela-imaginaria",
+      "theme": "concentracion",
+      "title": "La vela imaginaria",
+      "duration": 10,
+      "script": "Imagina que tienes delante una vela encendida, muy cerca de la boca. Vas a soplar tan suave y tan largo que la llama se incline, pero nunca se apague. Toma aire por la nariz sin ruido y suelta ese hilo de aire despacio. Diez veces. Si la llama se apaga en tu cabeza, enciéndela otra vez y sigue.",
+      "steps": [
+        "Imagina una vela encendida muy cerca de tu boca.",
+        "Sopla tan suave y tan largo que se incline sin apagarse.",
+        "Repítelo diez veces, tomando aire por la nariz."
+      ]
+    },
+    {
+      "id": "crea-tres-cosas-imposibles",
+      "theme": "creatividad",
+      "title": "Tres cosas imposibles",
+      "duration": 10,
+      "script": "Vas a inventar tres cosas que no puedan existir de ninguna manera. Una que quepa en un bolsillo, otra del tamaño de una casa y otra que no se pueda ver. Dilas en voz alta y explícalas como si fueran de verdad: para qué sirven, quién las usa y qué pasa si se rompen.",
+      "steps": [
+        "Inventa tres cosas imposibles: de bolsillo, enorme e invisible.",
+        "Dilas en voz alta y explica para qué sirven.",
+        "Cuenta qué pasaría si una de ellas se rompiera."
+      ]
+    },
+    {
+      "id": "crea-la-maquina-inutil",
+      "theme": "creatividad",
+      "title": "La máquina inútil",
+      "duration": 12,
+      "script": "Diseña una máquina que no sirva absolutamente para nada, pero que sea preciosa. Decide cuántas piezas tiene, qué ruido hace y de qué color es. Piensa dónde la pondrías si te la regalasen. Y ponle un nombre largo y serio, como si la hubiera inventado alguien muy importante.",
+      "steps": [
+        "Diseña una máquina que no sirva para nada.",
+        "Decide sus piezas, su ruido y su color.",
+        "Ponle un nombre largo y serio."
+      ]
+    },
+    {
+      "id": "crea-si-los-colores-sonaran",
+      "theme": "creatividad",
+      "title": "Si los colores sonaran",
+      "duration": 10,
+      "script": "Imagina que cada color tiene un sonido. Empieza por el rojo: ¿es un golpe, un zumbido, una risa? Sigue con el azul, el amarillo y el verde. Hazlos con la boca, en voz alta, aunque suenen raros. Luego mira a tu alrededor y prueba a sonar lo que ves.",
+      "steps": [
+        "Decide qué sonido tiene el rojo y hazlo en voz alta.",
+        "Haz lo mismo con el azul, el amarillo y el verde.",
+        "Mira a tu alrededor y sonoriza lo que ves."
+      ]
+    },
+    {
+      "id": "crea-un-cuento-en-tres-palabras",
+      "theme": "creatividad",
+      "title": "Un cuento en tres palabras",
+      "duration": 12,
+      "script": "Que alguien te diga tres palabras que no tengan nada que ver entre sí. Si estás a solas, abre un libro por tres páginas al azar y coge la primera palabra de cada una. Con esas tres, cuenta un cuento entero: principio, lío y final. No lo pienses mucho antes de empezar, arranca y que el cuento se resuelva solo.",
+      "steps": [
+        "Consigue tres palabras al azar, de alguien o de un libro.",
+        "Cuenta con ellas un cuento con principio, lío y final.",
+        "Empieza sin pensarlo demasiado."
+      ]
+    },
+    {
+      "id": "crea-el-museo-de-lo-normal",
+      "theme": "creatividad",
+      "title": "El museo de lo normal",
+      "duration": 10,
+      "script": "Coge un objeto cualquiera de los que usas a diario y preséntalo como si fuera la pieza más valiosa de un museo. Cuenta quién lo fabricó, en qué época, por qué es tan importante y qué misterio guarda. Habla como hablan los guías de museo, despacio y con respeto. Al final, invita a las visitas a pasar a la sala siguiente.",
+      "steps": [
+        "Elige un objeto corriente de tu casa.",
+        "Preséntalo como la pieza estrella de un museo.",
+        "Cuenta su origen, su época y su misterio."
+      ]
+    },
+    {
+      "id": "crea-la-receta-imposible",
+      "theme": "creatividad",
+      "title": "La receta imposible",
+      "duration": 8,
+      "script": "Vas a inventar una receta con ingredientes que no se pueden comprar: una cucharada de silencio, dos días de lluvia, un poco de la risa de alguien. Di los ingredientes, di cómo se mezclan y cuánto tiempo tarda en estar listo. Y dile a quién se la darías a probar.",
+      "steps": [
+        "Elige ingredientes que no se puedan comprar.",
+        "Explica cómo se mezclan y cuánto tardan.",
+        "Di a quién se la darías a probar."
+      ]
+    },
+    {
+      "id": "crea-mapa-de-un-lugar-que-no-existe",
+      "theme": "creatividad",
+      "title": "Mapa de un lugar que no existe",
+      "duration": 14,
+      "script": "Dibuja el mapa de un sitio inventado. Empieza por la costa o por la frontera, lo que prefieras. Pon un río, una montaña y tres pueblos con nombre. Marca un lugar al que nadie va nunca y otro al que va todo el mundo. Cuando esté, cuenta en voz alta el camino de uno al otro.",
+      "steps": [
+        "Dibuja la costa o la frontera de un lugar inventado.",
+        "Añade un río, una montaña y tres pueblos con nombre.",
+        "Marca un sitio al que nadie va y otro al que va todo el mundo."
+      ]
+    },
+    {
+      "id": "crea-la-voz-de-las-cosas",
+      "theme": "creatividad",
+      "title": "La voz de las cosas",
+      "duration": 8,
+      "script": "Mira tres objetos de la habitación y dales voz. ¿Cómo habla una silla que lleva veinte años ahí? ¿Y una cuchara recién comprada? Haz que se digan algo entre ellos, aunque sea una tontería. Termina dejando que uno de los tres cuente un secreto.",
+      "steps": [
+        "Elige tres objetos de la habitación.",
+        "Dales voz y haz que hablen entre ellos.",
+        "Deja que uno cuente un secreto."
+      ]
+    },
+    {
+      "id": "grat-tres-cosas-de-hoy",
+      "theme": "gratitud",
+      "title": "Tres cosas de hoy",
+      "duration": 8,
+      "script": "Piensa en el día de hoy, desde que te despertaste hasta ahora mismo. Busca tres momentos que hayan estado bien, aunque sean pequeñísimos: un rato de sol, algo que te salió a la primera, alguien que te habló bien. Dilos en voz alta y, con cada uno, respira hondo una vez.",
+      "steps": [
+        "Repasa el día desde que te despertaste.",
+        "Encuentra tres momentos buenos, por pequeños que sean.",
+        "Dilos en voz alta y respira hondo con cada uno."
+      ]
+    },
+    {
+      "id": "grat-la-carta-que-no-envio",
+      "theme": "gratitud",
+      "title": "La carta que no envío",
+      "duration": 12,
+      "script": "Piensa en alguien que te ayudó y nunca supo hasta qué punto. Escríbele una carta corta que no vas a mandar. Cuéntale qué hizo exactamente, qué pasó después gracias a eso y qué le dirías si lo tuvieras delante. Cuando termines, léela en voz baja, para ti.",
+      "steps": [
+        "Piensa en alguien que te ayudó sin saberlo del todo.",
+        "Escríbele una carta corta que no vas a enviar.",
+        "Léela en voz baja al terminar."
+      ]
+    },
+    {
+      "id": "grat-gracias-a-mis-manos",
+      "theme": "gratitud",
+      "title": "Gracias a mis manos",
+      "duration": 8,
+      "script": "Mírate las manos con calma, por delante y por detrás. Piensa en tres cosas que han hecho hoy por ti y que ni siquiera has notado. Luego en algo que sepan hacer bien y que te haya costado aprender. Termina apretándolas suave, una con la otra, durante unos segundos.",
+      "steps": [
+        "Mírate las manos por delante y por detrás.",
+        "Recuerda tres cosas que han hecho hoy por ti.",
+        "Piensa en algo que sepan hacer y que costó aprender."
+      ]
+    },
+    {
+      "id": "grat-el-detalle-pequeno",
+      "theme": "gratitud",
+      "title": "El detalle pequeño",
+      "duration": 10,
+      "script": "Busca a tu alrededor algo que esté ahí porque alguien lo puso. Una planta, un interruptor, una manta doblada. Piensa en quién lo hizo y en el trabajo que hay detrás, desde que se fabricó hasta que llegó aquí. Es una cadena larga de gente que no conoces. Quédate un momento con esa idea.",
+      "steps": [
+        "Encuentra algo que esté ahí porque alguien lo puso.",
+        "Piensa en toda la gente que hizo falta para que llegase.",
+        "Quédate un momento con esa idea."
+      ]
+    },
+    {
+      "id": "grat-quien-me-ayudo",
+      "theme": "gratitud",
+      "title": "Quién me ayudó",
+      "duration": 10,
+      "script": "Recuerda un momento difícil que ya pasó. No hace falta volver al mal rato, solo a cómo saliste de él. ¿Quién estaba? ¿Qué hizo o qué dijo? A lo mejor no fue nadie y fuiste tú. Dilo en voz alta, como si se lo contaras a alguien que acaba de llegar.",
+      "steps": [
+        "Recuerda un momento difícil que ya quedó atrás.",
+        "Piensa en quién estuvo ahí y qué hizo.",
+        "Cuéntalo en voz alta, como a alguien que acaba de llegar."
+      ]
+    },
+    {
+      "id": "grat-mi-objeto-favorito",
+      "theme": "gratitud",
+      "title": "Mi objeto favorito",
+      "duration": 8,
+      "script": "Piensa en un objeto tuyo que no venderías por nada. Recuerda cómo llegó a tus manos y por qué sigue ahí. Si puedes, ve a buscarlo y tenlo un rato contigo. Cuenta en voz alta una historia que haya vivido contigo.",
+      "steps": [
+        "Piensa en un objeto tuyo que no venderías.",
+        "Recuerda cómo llegó a tus manos.",
+        "Cuenta en voz alta una historia que vivió contigo."
+      ]
+    },
+    {
+      "id": "grat-un-dia-sin-esto",
+      "theme": "gratitud",
+      "title": "Un día sin esto",
+      "duration": 12,
+      "script": "Elige algo tan normal que ni lo miras: el agua caliente, la luz al entrar, una cama. Imagina un día entero sin eso, con todo el detalle que puedas: qué harías al levantarte, cómo sería la tarde, cómo acabarías la noche. Luego vuelve aquí y date cuenta de que sí está.",
+      "steps": [
+        "Elige algo tan normal que ni lo miras.",
+        "Imagina con detalle un día entero sin ello.",
+        "Vuelve y date cuenta de que sí está."
+      ]
+    },
+    {
+      "id": "grat-la-lista-de-la-noche",
+      "theme": "gratitud",
+      "title": "La lista de la noche",
+      "duration": 8,
+      "script": "Antes de dormir, haz una lista mental de lo que hoy ha salido bien. Empieza por lo más grande y ve bajando hasta lo más pequeño, hasta llegar a algo tan mínimo como un vaso de agua fría. Cuando ya no encuentres más, quédate en silencio y deja que el cuerpo se afloje.",
+      "steps": [
+        "Haz una lista mental de lo que hoy salió bien.",
+        "Ve de lo más grande a lo más pequeño.",
+        "Quédate en silencio y deja que el cuerpo se afloje."
+      ]
+    },
+    {
+      "id": "viaje-el-globo-de-papel",
+      "theme": "viaje",
+      "title": "El globo de papel",
+      "duration": 12,
+      "script": "Túmbate y cierra los ojos. Estás subiendo en un globo hecho de papel muy fino, que se mueve despacio con el viento. Desde arriba ves los tejados, luego los campos, luego el dibujo entero del sitio donde vives. Hace fresco y no hay ningún ruido. Quédate ahí arriba un rato largo y baja cuando quieras, muy poco a poco.",
+      "steps": [
+        "Túmbate y cierra los ojos.",
+        "Sube en un globo de papel y mira lo que queda abajo.",
+        "Quédate arriba un rato y baja muy despacio."
+      ]
+    },
+    {
+      "id": "viaje-la-playa-de-noche",
+      "theme": "viaje",
+      "title": "La playa de noche",
+      "duration": 14,
+      "script": "Imagina una playa vacía, de noche, con la arena aún tibia del día. Camina por la orilla y nota el agua fresca en los pies. Cada ola que llega se lleva algo que hoy te pesaba, y cada ola que se va lo deja en el fondo del mar. Siéntate en la arena, mira las luces lejanas y respira al ritmo de las olas.",
+      "steps": [
+        "Imagina una playa vacía de noche, con la arena tibia.",
+        "Camina por la orilla y deja que cada ola se lleve algo.",
+        "Siéntate y respira al ritmo del agua."
+      ]
+    },
+    {
+      "id": "viaje-el-tren-que-no-para",
+      "theme": "viaje",
+      "title": "El tren que no para",
+      "duration": 12,
+      "script": "Vas en un tren de noche, junto a la ventanilla. Fuera pasan pueblos con luces encendidas y gente que no vas a conocer nunca. Nadie te pide nada, no hay que bajarse en ninguna parada. El traqueteo es regular, como una respiración. Déjate llevar por el ruido del tren y mira pasar el paisaje sin pensar en nada.",
+      "steps": [
+        "Ve en tren de noche, junto a la ventanilla.",
+        "Mira pasar pueblos con luces encendidas.",
+        "Deja que el traqueteo marque tu respiración."
+      ]
+    },
+    {
+      "id": "viaje-el-bosque-de-las-luces",
+      "theme": "viaje",
+      "title": "El bosque de las luces",
+      "duration": 14,
+      "script": "Entras en un bosque al anochecer. Entre los árboles hay pequeñas luces que flotan y que se apartan cuando te acercas, como si jugaran. El suelo es blando de hojas. Sigue a una de las luces hasta un claro y siéntate allí. Las demás irán llegando, despacio, hasta rodearte.",
+      "steps": [
+        "Entra en un bosque al anochecer, con el suelo blando.",
+        "Sigue a una de las luces que flotan entre los árboles.",
+        "Siéntate en el claro y deja que las demás lleguen."
+      ]
+    },
+    {
+      "id": "viaje-la-casa-en-el-arbol",
+      "theme": "viaje",
+      "title": "La casa en el árbol",
+      "duration": 12,
+      "script": "Sube por una escalera de cuerda hasta una casa de madera construida en un árbol enorme. Dentro hay una manta, una ventana y justo lo que a ti te gustaría que hubiera. Nadie sabe que estás aquí. Mira por la ventana cómo se mueven las hojas y quédate hasta que te entre sueño.",
+      "steps": [
+        "Sube por una escalera de cuerda hasta una casa en un árbol.",
+        "Coloca dentro lo que a ti te gustaría que hubiera.",
+        "Mira por la ventana y quédate hasta que te entre sueño."
+      ]
+    },
+    {
+      "id": "viaje-el-fondo-del-mar",
+      "theme": "viaje",
+      "title": "El fondo del mar",
+      "duration": 16,
+      "script": "Bajas al mar muy despacio, y aquí abajo se puede respirar sin problema. La luz llega en rayos que se mueven. Pasan peces que no tienen ninguna prisa y el agua te sostiene entera, sin que tengas que hacer fuerza. Apóyate en la arena del fondo y quédate quieto, notando cómo todo se mueve lento a tu alrededor.",
+      "steps": [
+        "Baja al fondo del mar, donde aquí sí se puede respirar.",
+        "Mira la luz y los peces que pasan sin prisa.",
+        "Apóyate en la arena y nota cómo el agua te sostiene."
+      ]
+    },
+    {
+      "id": "viaje-la-nave-lenta",
+      "theme": "viaje",
+      "title": "La nave lenta",
+      "duration": 16,
+      "script": "Estás en una nave que viaja muy despacio entre las estrellas. No hay motores ruidosos ni emergencias, solo una ventana grande y silencio. Fuera, las estrellas tardan horas en cambiar de sitio. Tu cuerpo pesa muy poco. Elige una estrella y quédate mirándola hasta que dejes de pensar en el resto.",
+      "steps": [
+        "Viaja en una nave silenciosa entre las estrellas.",
+        "Nota que tu cuerpo pesa muy poco.",
+        "Elige una estrella y quédate mirándola."
+      ]
+    },
+    {
+      "id": "viaje-el-desierto-al-amanecer",
+      "theme": "viaje",
+      "title": "El desierto al amanecer",
+      "duration": 14,
+      "script": "Estás sentado en una duna, justo antes de que salga el sol. Hace fresco y la arena todavía guarda el frío de la noche. El cielo se va poniendo naranja muy poco a poco, sin que puedas ver el momento exacto en que cambia. Cuando el sol asome, nota el calor llegando a tu cara y quédate ahí, sin hacer nada más.",
+      "steps": [
+        "Siéntate en una duna antes de que salga el sol.",
+        "Mira cómo el cielo cambia de color muy poco a poco.",
+        "Nota el calor en la cara cuando el sol asome."
+      ]
+    }
+  ]
+}
