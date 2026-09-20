@@ -410,6 +410,252 @@
         "Mira cómo el cielo cambia de color muy poco a poco.",
         "Nota el calor en la cara cuando el sol asome."
       ]
+    },
+    {
+      "id": "conc-radar-de-sonidos",
+      "theme": "concentracion",
+      "title": "Radar de sonidos",
+      "duration": 8,
+      "script": "Cierra los ojos y quédate quieto diez segundos, escuchando todo lo que suena alrededor. Cuando los abras, di en voz alta tres sonidos que recuerdes con detalle. Después cierra otra vez los ojos e intenta cazar uno que antes se te hubiera escapado.",
+      "steps": [
+        "Cierra los ojos diez segundos y escucha todo lo que suena.",
+        "Abre los ojos y di tres sonidos que recuerdes con detalle.",
+        "Repite una vez más buscando un sonido nuevo."
+      ]
+    },
+    {
+      "id": "conc-cazador-de-detalles",
+      "theme": "concentracion",
+      "title": "Cazador de detalles",
+      "duration": 8,
+      "script": "Mira a tu alrededor y elige un objeto cualquiera. Durante medio minuto, descríbelo en voz alta sin parar: sus colores, sus formas, su textura, las marcas que tenga. Luego cierra los ojos y repite la descripción entera de memoria. Al abrirlos, comprueba qué detalle se te había olvidado.",
+      "steps": [
+        "Elige un objeto cualquiera que tengas delante.",
+        "Descríbelo en voz alta treinta segundos: colores, formas, texturas.",
+        "Cierra los ojos, repite la descripción y comprueba qué olvidaste."
+      ]
+    },
+    {
+      "id": "conc-cuenta-lenta",
+      "theme": "concentracion",
+      "title": "Cuenta lenta",
+      "duration": 8,
+      "script": "Busca un punto fijo delante de ti y conviértelo en tu ancla. Cuenta del uno al veinte muy despacio, sin apartar la vista de ese punto. Si la cabeza se te va a otro sitio, no pasa nada: vuelve al punto y retoma la cuenta donde la dejaste.",
+      "steps": [
+        "Elige un punto fijo delante de ti: es tu ancla.",
+        "Cuenta muy despacio del uno al veinte sin perderlo de vista.",
+        "Si te despistas, vuelve al punto y sigue donde lo dejaste."
+      ]
+    },
+    {
+      "id": "conc-seguir-al-lider",
+      "theme": "concentracion",
+      "title": "Seguir al líder",
+      "duration": 10,
+      "players": "2 o más",
+      "script": "Una persona hace de líder y elige un movimiento sencillo, como levantar la mano o dar golpecitos en la mesa. Los demás lo copian exactamente al ritmo que marque, sin adelantarse ni quedarse atrás. Cada medio minuto cambia el líder y cambia el movimiento.",
+      "steps": [
+        "El líder elige un movimiento sencillo.",
+        "Los demás lo copian a su ritmo exacto, sin adelantarse.",
+        "Cada treinta segundos cambia el líder y el movimiento."
+      ]
+    },
+    {
+      "id": "conc-foto-mental",
+      "theme": "concentracion",
+      "title": "Foto mental",
+      "duration": 8,
+      "script": "Mira la escena que tienes delante como si fueras a hacerle una foto con la cabeza. Ciérrala de golpe, cerrando los ojos, y mira esa foto por dentro: recuerda tres cosas que aparecen en ella. Luego abre los ojos y comprueba si tu foto coincide con lo que hay de verdad.",
+      "steps": [
+        "Mira lo que tienes delante como si fueras a fotografiarlo.",
+        "Cierra los ojos y recuerda tres cosas de esa foto mental.",
+        "Abre los ojos y comprueba qué coincide y qué falta."
+      ]
+    },
+    {
+      "id": "crea-historia-de-tres-objetos",
+      "theme": "creatividad",
+      "title": "Historia de tres objetos",
+      "duration": 10,
+      "script": "Coge tres objetos que tengas cerca y ponlos delante de ti. Van a ser los personajes de una historia que te vas a inventar ahora mismo, con su principio, su lío y su final. Cuéntala en voz alta en menos de un minuto y no dejes que nadie te corrija por el camino.",
+      "steps": [
+        "Coloca delante de ti tres objetos que tengas cerca.",
+        "Invéntate una historia donde sean los personajes.",
+        "Cuéntala en voz alta en menos de un minuto."
+      ]
+    },
+    {
+      "id": "crea-final-diferente",
+      "theme": "creatividad",
+      "title": "Final diferente",
+      "duration": 10,
+      "script": "Piensa en un cuento o una película que te sepas de memoria. Ahora cámbiale el final entero: que pase algo inesperado, divertido o directamente imposible. Explica tu nuevo final en voz alta, y cuanto más loca sea la idea, mejor.",
+      "steps": [
+        "Piensa en un cuento o una película que conozcas bien.",
+        "Cámbiale el final por algo inesperado, divertido o imposible.",
+        "Explícalo en voz alta sin descartar ninguna idea."
+      ]
+    },
+    {
+      "id": "crea-superpoder-del-dia",
+      "theme": "creatividad",
+      "title": "Superpoder del día",
+      "duration": 10,
+      "players": "2 o más",
+      "script": "Elige un superpoder que tengas solo por hoy, como entender a los animales o parar el tiempo diez segundos. Cuenta cómo lo usarías aquí mismo, en el sitio donde estás ahora. Luego pide a otra persona que proponga un uso más y añádelo a tu historia sin decir que no.",
+      "steps": [
+        "Elige un superpoder que tengas solo hoy.",
+        "Cuenta cómo lo usarías en el sitio donde estás ahora.",
+        "Que otra persona proponga otro uso y añádelo sin decir que no."
+      ]
+    },
+    {
+      "id": "crea-inventor-de-reglas",
+      "theme": "creatividad",
+      "title": "Inventor de reglas",
+      "duration": 12,
+      "players": "2 o más",
+      "script": "Elegid entre todos un juego clásico: el pilla pilla, el escondite, Simón dice, el que queráis. Inventad una regla nueva que no haya existido nunca, aunque suene absurda. Y jugad una ronda corta aplicándola en serio, sin saltársela ni una vez.",
+      "steps": [
+        "Elegid un juego clásico que todos conozcáis.",
+        "Inventad una regla nueva que no haya existido nunca.",
+        "Jugad una ronda corta aplicándola, por rara que sea."
+      ]
+    },
+    {
+      "id": "crea-objeto-magico",
+      "theme": "creatividad",
+      "title": "Objeto mágico",
+      "duration": 10,
+      "script": "Escoge un objeto que tengas delante y decide qué poder mágico esconde. Cuenta qué ocurre si alguien lo usa tres veces seguidas. Y para terminar, imagina un problema pequeño que ese poder acabaría provocando, y cómo lo arreglarías tú.",
+      "steps": [
+        "Escoge un objeto y decide qué poder mágico tiene.",
+        "Explica qué pasa si alguien lo usa tres veces seguidas.",
+        "Imagina el problema que causaría y cómo lo resolverías."
+      ]
+    },
+    {
+      "id": "grat-tres-cosas-que-ya-estan",
+      "theme": "gratitud",
+      "title": "Tres cosas que ya están",
+      "duration": 8,
+      "script": "Mira a tu alrededor y busca tres cosas que ya tienes y que hoy te están ayudando. Nómbralas en voz alta y di por qué te facilitan la vida, aunque sea en algo mínimo. Después cierra los ojos un momento e imagina cómo habría sido el día sin una de ellas.",
+      "steps": [
+        "Busca tres cosas que ya tienes y que hoy te ayudan.",
+        "Nómbralas en voz alta y di por qué te facilitan la vida.",
+        "Cierra los ojos e imagina el día sin una de ellas."
+      ]
+    },
+    {
+      "id": "grat-aplauso-al-dia",
+      "theme": "gratitud",
+      "title": "Aplauso al día",
+      "duration": 8,
+      "players": "2 o más",
+      "script": "Cada uno elige un momento agradable que ya haya pasado hoy, por pequeño que sea. Lo cuenta en una sola frase, sin adornos. Y en cuanto termina, todos dan un aplauso rápido, como si ese momento acabara de ganar un premio.",
+      "steps": [
+        "Cada uno elige un momento bueno de hoy, por pequeño que sea.",
+        "Lo cuenta en una frase corta.",
+        "Todos aplauden rápido por cada momento compartido."
+      ]
+    },
+    {
+      "id": "grat-gracias-ocultas",
+      "theme": "gratitud",
+      "title": "Gracias ocultas",
+      "duration": 10,
+      "script": "Piensa en alguien que no está aquí pero que te ha ayudado de alguna forma. Di en voz alta qué hizo exactamente y por qué fue importante para ti. Después imagina que lo tienes delante y dile la frase de agradecimiento que le dirías, en voz alta, ahora mismo.",
+      "steps": [
+        "Piensa en alguien que no está y que te ayudó.",
+        "Di en voz alta qué hizo y por qué fue importante.",
+        "Dile ahora la frase que le dirías si estuviera aquí."
+      ]
+    },
+    {
+      "id": "grat-tesoro-del-lugar",
+      "theme": "gratitud",
+      "title": "Tesoro del lugar",
+      "duration": 10,
+      "players": "2 o más",
+      "script": "Mirad el sitio donde estáis y buscad algo que se dé siempre por hecho: la luz, una silla, una ventana. Que cada uno explique por qué eso es un tesoro hoy, aunque al principio suene raro. Luego elegid entre todos el tesoro del día y celebradlo con un gesto.",
+      "steps": [
+        "Buscad algo del lugar que deis siempre por hecho.",
+        "Explicad por qué eso es un tesoro hoy.",
+        "Elegid entre todos el tesoro del día y celebradlo."
+      ]
+    },
+    {
+      "id": "grat-cadena-de-cumplidos",
+      "theme": "gratitud",
+      "title": "Cadena de cumplidos",
+      "duration": 10,
+      "players": "3 o más",
+      "script": "Uno empieza: mira a otra persona y le dice un cumplido sincero sobre algo que ya tiene o que ya hace. Quien lo recibe se lo pasa a alguien distinto, pero con otras palabras, sin repetir la frase anterior. La cadena sigue hasta que todos hayan recibido al menos uno.",
+      "steps": [
+        "Alguien dice a otra persona un cumplido sincero.",
+        "Quien lo recibe se lo dice a otra, sin repetir la frase.",
+        "Seguid hasta que todos hayan recibido uno."
+      ]
+    },
+    {
+      "id": "viaje-billete-imaginario",
+      "theme": "viaje",
+      "title": "Billete imaginario",
+      "duration": 12,
+      "script": "Elige un lugar del mundo al que te gustaría viajar y ve allí sin levantarte del sitio. Describe lo que ves nada más llegar: los colores, los olores, los sonidos, la gente que pasa. Y cuenta qué harías en los primeros cinco minutos de estar allí.",
+      "steps": [
+        "Elige un lugar del mundo al que te gustaría viajar.",
+        "Describe lo que ves al llegar: colores, olores, sonidos, gente.",
+        "Cuenta qué harías en los primeros cinco minutos."
+      ]
+    },
+    {
+      "id": "viaje-ascensor-fantastico",
+      "theme": "viaje",
+      "title": "Ascensor fantástico",
+      "duration": 12,
+      "script": "Imagina que entras en un ascensor capaz de llevarte a cualquier mundo inventado. Di en voz alta a qué mundo vas y qué aparece cuando se abren las puertas. Vive allí una aventura corta y vuelve al ascensor para regresar al sitio donde estás de verdad.",
+      "steps": [
+        "Entra en un ascensor que lleva a mundos inventados.",
+        "Di a qué mundo vas y qué ves al abrirse las puertas.",
+        "Cuenta una aventura breve antes de volver."
+      ]
+    },
+    {
+      "id": "viaje-mapa-en-la-mesa",
+      "theme": "viaje",
+      "title": "Mapa en la mesa",
+      "duration": 12,
+      "script": "Mira la mesa o el suelo y decide que a partir de ahora son un mapa gigante. Ve señalando países con el dedo y ponles nombres inventados según se te ocurran. Elige uno y cuenta cómo son sus habitantes y qué costumbre rarísima tienen.",
+      "steps": [
+        "Decide que la mesa o el suelo son un mapa gigante.",
+        "Señala países con el dedo y ponles nombres inventados.",
+        "Elige uno y cuenta cómo son sus habitantes y su costumbre más rara."
+      ]
+    },
+    {
+      "id": "viaje-en-el-tiempo",
+      "theme": "viaje",
+      "title": "Viaje en el tiempo",
+      "duration": 12,
+      "script": "Decide si hoy viajas al pasado o al futuro, sin moverte de donde estás. Di en qué año has aterrizado y qué ves a tu alrededor al llegar. Antes de volver al presente, cuenta una cosa que harías allí y que aquí no podrías hacer.",
+      "steps": [
+        "Decide si viajas al pasado o al futuro.",
+        "Di en qué año estás y qué ves al llegar.",
+        "Cuenta una cosa que harías antes de regresar."
+      ]
+    },
+    {
+      "id": "viaje-souvenir-invisible",
+      "theme": "viaje",
+      "title": "Souvenir invisible",
+      "duration": 10,
+      "script": "Imagina que acabas de volver de un viaje fantástico que solo ha ocurrido en tu cabeza. Traes contigo un souvenir invisible: puede ser un olor, una palabra, una canción. Descríbelo en voz alta y cuenta cómo hará que te acuerdes siempre de ese viaje.",
+      "steps": [
+        "Vuelve de un viaje fantástico que solo ocurrió en tu cabeza.",
+        "Elige el souvenir invisible que traes: un olor, una palabra, una canción.",
+        "Descríbelo en voz alta y di cómo te recordará ese viaje."
+      ]
     }
   ]
 }

@@ -38,13 +38,13 @@
         <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5 8 12l7 7"/></svg>
       </button>
       <span class="topbar__title" id="play-theme"></span>
-      <button class="icon-btn icon-btn--fav" id="btn-fav" type="button" aria-pressed="false" aria-label="Marcar como favorito" hidden>
+      <button class="icon-btn icon-btn--fav" id="btn-fav" data-sound="off" type="button" aria-pressed="false" aria-label="Marcar como favorito" hidden>
         <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20s-7-4.6-7-9.3A3.8 3.8 0 0 1 12 8a3.8 3.8 0 0 1 7 2.7C19 15.4 12 20 12 20z"/></svg>
       </button>
     </header>
 
     <div class="stage" id="stage">
-      <button class="spin" id="btn-spin" type="button">
+      <button class="spin" id="btn-spin" data-sound="off" type="button">
         <span class="spin__ring" aria-hidden="true"></span>
         <span class="spin__label">Girar</span>
       </button>
@@ -67,7 +67,7 @@
     <section class="recorder" id="recorder" aria-label="Grabar tu voz" hidden>
       <p class="recorder__state" id="recorder-state">Graba la consigna con tu voz</p>
       <div class="recorder__row">
-        <button class="btn btn--small btn--rec" id="btn-rec-toggle" type="button">Grabar</button>
+        <button class="btn btn--small btn--rec" id="btn-rec-toggle" data-sound="off" type="button">Grabar</button>
         <button class="btn btn--small" id="btn-rec-play" type="button" hidden>Escuchar</button>
         <button class="btn btn--small" id="btn-rec-export" type="button" hidden>Exportar</button>
         <button class="btn btn--small btn--danger" id="btn-rec-delete" type="button" hidden>Borrar</button>
@@ -87,13 +87,13 @@
         </span>
         <span class="action__label">Mi voz</span>
       </button>
-      <button class="action" id="btn-timer-start" type="button">
+      <button class="action" id="btn-timer-start" data-sound="off" type="button">
         <span class="action__icon" aria-hidden="true">
           <svg viewBox="0 0 24 24"><circle cx="12" cy="13" r="8"/><path d="M12 9v4l3 2M9 2h6"/></svg>
         </span>
         <span class="action__label">Tiempo</span>
       </button>
-      <button class="action action--primary" id="btn-again" type="button">
+      <button class="action action--primary" id="btn-again" data-sound="off" type="button">
         <span class="action__icon" aria-hidden="true">
           <svg viewBox="0 0 24 24"><path d="M20 12a8 8 0 1 1-2.6-5.9M20 4v4h-4"/></svg>
         </span>
@@ -113,10 +113,15 @@
     </header>
 
     <div class="panel">
-      <h2 class="panel__title">Voz</h2>
+      <h2 class="panel__title">Voz y sonido</h2>
       <label class="switch">
         <span>Leer la consigna al salir el juego</span>
         <input type="checkbox" id="set-voice">
+        <span class="switch__track" aria-hidden="true"></span>
+      </label>
+      <label class="switch">
+        <span>Sonidos del tótem</span>
+        <input type="checkbox" id="set-sounds">
         <span class="switch__track" aria-hidden="true"></span>
       </label>
       <label class="slider">

@@ -78,7 +78,7 @@
     favorites: load(K.fav, []),
     history: load(K.history, []),
     bag: load(K.bag, {}),
-    settings: Object.assign({ voice: true, rate: 1 }, load(K.settings, {})),
+    settings: Object.assign({ voice: true, rate: 1, sounds: true }, load(K.settings, {})),
     recorded: []
   };
 
@@ -322,6 +322,7 @@
       return;
     }
     stopPlayback();
+    sound.muted = true;
     navigator.mediaDevices.getUserMedia({ audio: true }).then(function (stream) {
       rec.stream = stream;
       rec.chunks = [];
@@ -334,6 +335,7 @@
         rec.stream.getTracks().forEach(function (t) { t.stop(); });
         rec.stream = null;
         rec.recorder = null;
+        sound.muted = false;
         if (!state.game || !blob.size) { renderRecorder(); return; }
         recPut({ id: state.game.id, blob: blob, mime: type, at: Date.now() }).then(function () {
           return refreshRecorded();
@@ -345,6 +347,7 @@
       rec.recorder.start();
       renderRecorder();
     }).catch(function () {
+      sound.muted = false;
       toast('No se pudo acceder al micrófono');
     });
   }
@@ -408,6 +411,7 @@
     tickTimer();
     timer.handle = setInterval(tickTimer, 250);
     requestLock();
+    sound.play('timer');
   }
 
   function tickTimer() {
@@ -425,7 +429,7 @@
     $('timer').classList.add('is-done');
     $('timer-time').textContent = '00:00';
     if (navigator.vibrate) { try { navigator.vibrate([220, 120, 220]); } catch (e) {} }
-    beep();
+    sound.play('done');
     toast('Se acabó el tiempo');
   }
 
@@ -440,24 +444,87 @@
     if (!silent) $('timer-fill').style.width = '100%';
   }
 
-  var audioCtx = null;
-  function beep() {
-    try {
-      var Ctx = window.AudioContext || window.webkitAudioContext;
-      if (!Ctx) return;
-      if (!audioCtx) audioCtx = new Ctx();
-      if (audioCtx.state === 'suspended') audioCtx.resume();
-      var osc = audioCtx.createOscillator();
-      var gain = audioCtx.createGain();
-      osc.type = 'sine';
-      osc.frequency.value = 528;
-      gain.gain.setValueAtTime(0.0001, audioCtx.currentTime);
-      gain.gain.exponentialRampToValueAtTime(0.25, audioCtx.currentTime + 0.05);
-      gain.gain.exponentialRampToValueAtTime(0.0001, audioCtx.currentTime + 1.2);
-      osc.connect(gain); gain.connect(audioCtx.destination);
-      osc.start(); osc.stop(audioCtx.currentTime + 1.25);
-    } catch (e) { /* sin sonido, queda la vibración */ }
-  }
+  /* ---------------- sonidos del tótem ----------------
+     Se sintetizan aquí mismo: ni ficheros que descargar ni dependencias. */
+
+  var sound = {
+    ctx: null,
+    muted: false,
+
+    unlock: function () {
+      try {
+        var Ctx = window.AudioContext || window.webkitAudioContext;
+        if (!Ctx) return null;
+        if (!this.ctx) this.ctx = new Ctx();
+        if (this.ctx.state === 'suspended') this.ctx.resume();
+        return this.ctx;
+      } catch (e) { return null; }
+    },
+
+    note: function (freq, at, dur, type, gain, slideTo) {
+      var ctx = this.ctx;
+      var t0 = ctx.currentTime + at;
+      var osc = ctx.createOscillator();
+      var amp = ctx.createGain();
+      osc.type = type || 'triangle';
+      osc.frequency.setValueAtTime(freq, t0);
+      if (slideTo) osc.frequency.exponentialRampToValueAtTime(slideTo, t0 + dur);
+      amp.gain.setValueAtTime(0.0001, t0);
+      amp.gain.exponentialRampToValueAtTime(gain || 0.09, t0 + 0.012);
+      amp.gain.exponentialRampToValueAtTime(0.0001, t0 + dur);
+      osc.connect(amp);
+      amp.connect(ctx.destination);
+      osc.start(t0);
+      osc.stop(t0 + dur + 0.03);
+    },
+
+    play: function (name) {
+      if (!state.settings.sounds || this.muted) return;
+      if (!this.unlock()) return;
+      var i;
+      switch (name) {
+        case 'tap':
+          this.note(660, 0, 0.07, 'triangle', 0.05);
+          break;
+        case 'spin':
+          // Una rueda que corre y va frenando, dentro de los 0,7 s de la animación.
+          var at = 0, gap = 0.028;
+          for (i = 0; i < 10; i++) {
+            this.note(300 + i * 46, at, 0.05, 'square', 0.035);
+            at += gap;
+            gap *= 1.18;
+          }
+          break;
+        case 'reveal':
+          this.note(130.8, 0, 0.35, 'sine', 0.1);
+          [523.25, 659.25, 783.99, 1046.5].forEach(function (f, n) {
+            sound.note(f, 0.04 + n * 0.075, 0.38, 'triangle', 0.1);
+          });
+          break;
+        case 'fav':
+          this.note(659.25, 0, 0.1, 'triangle', 0.09);
+          this.note(987.77, 0.08, 0.16, 'triangle', 0.09);
+          break;
+        case 'unfav':
+          this.note(659.25, 0, 0.1, 'triangle', 0.07);
+          this.note(440, 0.08, 0.16, 'triangle', 0.07);
+          break;
+        case 'timer':
+          this.note(523.25, 0, 0.09, 'square', 0.05);
+          this.note(783.99, 0.1, 0.14, 'square', 0.05);
+          break;
+        case 'done':
+          // Fanfarria corta, repetida una vez.
+          [0, 0.62].forEach(function (offset) {
+            [783.99, 987.77, 1174.66, 1567.98].forEach(function (f, n) {
+              sound.note(f, offset + n * 0.12, 0.3, 'triangle', 0.12);
+            });
+            sound.note(196, offset, 0.5, 'sine', 0.09);
+          });
+          break;
+      }
+    }
+  };
 
   /* ---------------- vistas ---------------- */
 
@@ -548,6 +615,8 @@
     var reduced = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
     var delay = reduced ? 0 : 700;
 
+    sound.play('spin');
+
     if (delay) {
       btn.classList.add('is-spinning');
       setTimeout(function () { btn.classList.remove('is-spinning'); showGame(game); }, delay);
@@ -569,7 +638,11 @@
     $('btn-fav').hidden = false;
 
     var themeName = (state.themes.filter(function (t) { return t.id === game.theme; })[0] || {}).name || '';
-    $('card-meta').textContent = (state.surprise ? themeName + ' · ' : '') + game.duration + ' min';
+    var meta = [];
+    if (state.surprise && themeName) meta.push(themeName);
+    meta.push(game.duration + ' min');
+    if (game.players) meta.push(game.players);
+    $('card-meta').textContent = meta.join(' · ');
     $('card-title').textContent = game.title;
 
     var steps = $('card-steps');
@@ -581,6 +654,7 @@
     });
 
     $('btn-fav').setAttribute('aria-pressed', isFavorite(game.id) ? 'true' : 'false');
+    sound.play('reveal');
     renderRecorder();
     $('recorder').hidden = true;
 
@@ -615,6 +689,7 @@
 
   function renderSettings() {
     $('set-voice').checked = !!state.settings.voice;
+    $('set-sounds').checked = !!state.settings.sounds;
     $('set-rate').value = state.settings.rate;
     $('set-rate-value').textContent = Number(state.settings.rate).toFixed(1);
 
@@ -684,6 +759,13 @@
   /* ---------------- eventos ---------------- */
 
   function wire() {
+    document.addEventListener('click', function (e) {
+      var btn = e.target.closest ? e.target.closest('button') : null;
+      if (!btn) return;
+      sound.unlock();
+      if (btn.getAttribute('data-sound') !== 'off') sound.play('tap');
+    }, true);
+
     $('btn-surprise').addEventListener('click', function () {
       var t = randomTheme();
       if (!t) return;
@@ -742,7 +824,14 @@
       if (!state.game) return;
       var now = toggleFavorite(state.game.id);
       $('btn-fav').setAttribute('aria-pressed', now ? 'true' : 'false');
+      sound.play(now ? 'fav' : 'unfav');
       toast(now ? 'Guardado en favoritos' : 'Quitado de favoritos');
+    });
+
+    $('set-sounds').addEventListener('change', function (e) {
+      state.settings.sounds = e.target.checked;
+      save(K.settings, state.settings);
+      if (state.settings.sounds) sound.play('fav');
     });
 
     $('set-voice').addEventListener('change', function (e) {

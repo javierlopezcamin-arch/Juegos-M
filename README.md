@@ -4,6 +4,9 @@ App-web para el móvil inspirada en el Totem de Morphée: eliges un tema, pulsas
 y sale un juego al azar. Puedes escucharlo con tu propia voz grabada o con la del móvil,
 cronometrarlo y guardarlo en favoritos.
 
+El tótem suena al girar, al revelar el juego y al acabarse el tiempo. Los sonidos se
+sintetizan en el propio navegador, así que no pesan nada, y se apagan desde Ajustes.
+
 No tiene servidor, ni base de datos, ni paso de compilación: son ficheros estáticos.
 Todo lo que recuerda la app (favoritos, historial, sorteo y grabaciones) vive en el
 propio teléfono.
@@ -37,7 +40,8 @@ Basta con pegar un bloque nuevo al final del array `games`:
 | `duration` | no | Minutos del temporizador. Por defecto, 10. |
 | `script` | no | El texto que se lee en voz alta, escrito para el oído. Si falta, se leen los pasos. |
 | `audio` | no | Ruta a un MP3 con tu locución, por ejemplo `data/audio/mi-juego.mp3`. |
-| `players`, `ages`, `materials`, `tags` | no | Campos libres, reservados para más adelante. |
+| `players` | no | Si el juego necesita compañía, por ejemplo `"2 o más"`. Aparece en la ficha. |
+| `ages`, `materials`, `tags` | no | Campos libres, reservados para más adelante. |
 
 Los temas se definen arriba del mismo fichero, en `themes`, con `id`, `name`, `color` y `subtitle`.
 Añadir un tema nuevo es igual de sencillo.
