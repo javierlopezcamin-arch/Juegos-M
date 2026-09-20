@@ -74,25 +74,32 @@ svg { width: 100%; height: 100%; fill: none; stroke: currentColor; stroke-width:
 
 .home__sub { margin: 6px 0 0; color: var(--text-dim); }
 
-.themes { display: grid; gap: 12px; flex: 1; align-content: center; }
+.themes { display: grid; gap: 5px; flex: 1; align-content: center; justify-items: center; }
 
 .theme {
   --c: var(--theme);
-  display: block;
-  width: 100%;
-  min-height: 84px;
-  padding: 16px 18px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  width: var(--w, 100%);
+  min-height: 94px;
+  padding: 14px 18px;
   text-align: left;
-  border-radius: var(--radius);
-  background: linear-gradient(135deg, color-mix(in srgb, var(--c) 26%, var(--bg-card)), var(--bg-card));
-  border: 1px solid color-mix(in srgb, var(--c) 35%, var(--line));
+  border-radius: 14px;
+  background: linear-gradient(135deg, color-mix(in srgb, var(--c) 34%, var(--bg-card)), var(--bg-card) 88%);
+  border: 1px solid color-mix(in srgb, var(--c) 42%, var(--line));
+  box-shadow: 0 10px 22px -18px #000;
   transition: transform .18s var(--ease);
 }
+.theme:first-child { border-radius: 24px 24px 14px 14px; }
+.theme:last-child { border-radius: 14px 14px 24px 24px; }
 .theme:active { transform: scale(.975); }
 
-.theme__name { display: block; font-size: 23px; font-weight: 600; }
-.theme__sub { display: block; margin-top: 2px; color: var(--text-dim); font-size: 14px; }
-.theme__count { float: right; color: var(--c); font-size: 14px; font-variant-numeric: tabular-nums; }
+.theme__icon { width: 30px; height: 30px; flex: none; color: var(--c); }
+.theme__text { flex: 1; min-width: 0; }
+.theme__name { display: block; font-size: 22px; font-weight: 600; }
+.theme__sub { display: block; margin-top: 2px; color: var(--text-dim); font-size: 13.5px; line-height: 1.3; }
+.theme__count { color: var(--c); font-size: 14px; font-variant-numeric: tabular-nums; flex: none; }
 
 .home__foot { display: grid; gap: 10px; padding-top: 22px; }
 
@@ -134,8 +141,7 @@ svg { width: 100%; height: 100%; fill: none; stroke: currentColor; stroke-width:
 
 /* ---------- Giro y ficha ---------- */
 
-.stage { flex: 1; display: flex; flex-direction: column; justify-content: center; align-items: center; padding: 10px 0; }
-.stage.has-card { justify-content: flex-start; padding-top: 18px; }
+.stage { flex: 1; display: flex; flex-direction: column; justify-content: center; align-items: center; padding: 10px 0; overflow-y: auto; }
 
 .spin {
   position: relative;
@@ -169,6 +175,37 @@ svg { width: 100%; height: 100%; fill: none; stroke: currentColor; stroke-width:
 
 @keyframes spin { from { transform: rotate(0); } to { transform: rotate(900deg); } }
 @keyframes fade { 0% { opacity: 1; } 45% { opacity: .15; } 100% { opacity: 1; } }
+
+.reel {
+  position: relative;
+  width: 100%;
+  height: 186px;
+  overflow: hidden;
+  -webkit-mask-image: linear-gradient(transparent, #000 24%, #000 76%, transparent);
+  mask-image: linear-gradient(transparent, #000 24%, #000 76%, transparent);
+}
+.reel::after {
+  content: "";
+  position: absolute;
+  left: 0; right: 0; top: 62px; height: 62px;
+  border-top: 1px solid color-mix(in srgb, var(--theme) 45%, transparent);
+  border-bottom: 1px solid color-mix(in srgb, var(--theme) 45%, transparent);
+  pointer-events: none;
+}
+.reel__track { will-change: transform; }
+.reel__item {
+  height: 62px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 14px;
+  font-family: Georgia, "Iowan Old Style", "Times New Roman", serif;
+  font-size: 23px;
+  line-height: 1.1;
+  text-align: center;
+  color: var(--text-dim);
+}
+.reel__item.is-win { color: var(--text); }
 
 .card { width: 100%; animation: rise .32s var(--ease); }
 @keyframes rise { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: none; } }
@@ -206,6 +243,40 @@ svg { width: 100%; height: 100%; fill: none; stroke: currentColor; stroke-width:
   font-size: 14px;
 }
 
+.stepper {
+  display: block;
+  width: 100%;
+  text-align: left;
+  padding: 2px 0;
+}
+.stepper__text {
+  display: block;
+  font-size: 25px;
+  line-height: 1.3;
+  min-height: 3.4em;
+}
+.stepper__hint {
+  display: block;
+  margin-top: 10px;
+  font-size: 13px;
+  color: var(--text-dim);
+}
+
+.dots { display: flex; gap: 9px; padding: 8px 0 2px; }
+.dot { width: 9px; height: 9px; border-radius: 50%; background: var(--line); transition: background .2s, transform .2s; }
+.dot.is-on { background: var(--theme); transform: scale(1.25); }
+
+.btn--tiny {
+  min-height: 40px;
+  padding: 0;
+  font-size: 14px;
+  font-weight: 400;
+  text-align: left;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  text-decoration-color: var(--line);
+}
+
 .card__needs {
   margin: 20px 0 0;
   padding-top: 14px;
@@ -233,6 +304,14 @@ svg { width: 100%; height: 100%; fill: none; stroke: currentColor; stroke-width:
 /* ---------- Acciones ---------- */
 
 .actions { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; padding-top: 14px; }
+.actions--three { grid-template-columns: repeat(3, 1fr); }
+
+.decide { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; padding-top: 10px; }
+.btn--done {
+  background: color-mix(in srgb, var(--theme) 62%, var(--bg-card));
+  border: 1px solid color-mix(in srgb, var(--theme) 75%, var(--line));
+  color: #fff;
+}
 
 .action {
   min-height: var(--tap);
@@ -279,6 +358,57 @@ svg { width: 100%; height: 100%; fill: none; stroke: currentColor; stroke-width:
 .list__name { flex: 1; font-size: 16px; }
 .list__name small { display: block; color: var(--text-dim); font-size: 13px; }
 .list__go { min-height: 44px; padding: 0 14px; border-radius: 999px; border: 1px solid var(--line); background: var(--bg-card); font-size: 14px; }
+
+/* ---------- Pegatinas ---------- */
+
+.board { display: grid; grid-template-columns: repeat(6, 1fr); gap: 8px; }
+.board:empty::after { content: "Todavía no hay pegatinas."; grid-column: 1 / -1; color: var(--text-dim); font-size: 14px; }
+
+.sticker {
+  --c: var(--theme);
+  aspect-ratio: 1;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  color: #fff;
+  background: radial-gradient(circle at 34% 28%, color-mix(in srgb, var(--c) 55%, #fff), var(--c) 78%);
+  box-shadow: 0 5px 12px -8px #000;
+}
+.sticker:nth-child(3n) { transform: rotate(-7deg); }
+.sticker:nth-child(3n+1) { transform: rotate(5deg); }
+.sticker svg { width: 56%; height: 56%; stroke-width: 2.2; }
+
+.stamp {
+  position: fixed;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  align-content: center;
+  gap: 18px;
+  background: rgba(10, 8, 7, .72);
+  z-index: 20;
+  pointer-events: none;
+}
+.stamp__art {
+  --c: var(--theme);
+  width: 176px;
+  height: 176px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  color: #fff;
+  background: radial-gradient(circle at 34% 28%, color-mix(in srgb, var(--c) 55%, #fff), var(--c) 78%);
+  box-shadow: 0 24px 50px -22px #000;
+  animation: pop .55s var(--ease);
+}
+.stamp__art svg { width: 84px; height: 84px; stroke-width: 2.2; }
+.stamp__label { margin: 0; font-size: 20px; font-weight: 600; animation: rise .5s var(--ease); }
+
+@keyframes pop {
+  0% { transform: scale(.2) rotate(-28deg); opacity: 0; }
+  60% { transform: scale(1.14) rotate(7deg); opacity: 1; }
+  100% { transform: scale(1) rotate(-4deg); }
+}
 
 /* ---------- Aviso flotante ---------- */
 

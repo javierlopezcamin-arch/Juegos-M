@@ -54,6 +54,15 @@ Antes de publicar conviene pasar el validador, que también se ejecuta solo en c
 node tools/check-games.mjs
 ```
 
+## Cómo se juega
+
+Eliges tema en el tótem y pulsas para girar: las fichas pasan como en una tragaperras
+y se paran en una. La consigna se lee paso a paso, tocando el texto para avanzar, o de
+un vistazo con "Ver todos los pasos". Al acabar hay dos caminos: **Otro juego**, que
+descarta sin gastar (el juego vuelve a la bolsa y saldrá más adelante), y **Hecho**, que
+lo da por jugado, no lo repite hasta agotar el tema y suma una pegatina al tablero de
+Ajustes.
+
 ## Poner tu voz
 
 1. Abre el juego en el móvil, pulsa **Mi voz** y graba. La grabación se guarda en el teléfono

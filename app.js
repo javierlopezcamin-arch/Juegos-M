@@ -10,6 +10,7 @@
     fav: 'totem:v1:favorites',
     history: 'totem:v1:history',
     bag: 'totem:v1:bag',
+    stickers: 'totem:v1:stickers',
     settings: 'totem:v1:settings'
   };
 
@@ -78,7 +79,8 @@
     favorites: load(K.fav, []),
     history: load(K.history, []),
     bag: load(K.bag, {}),
-    settings: Object.assign({ voice: true, rate: 1, sounds: true }, load(K.settings, {})),
+    stickers: load(K.stickers, []),
+    settings: Object.assign({ voice: true, rate: 1, sounds: true, allSteps: false }, load(K.settings, {})),
     recorded: []
   };
 
@@ -101,6 +103,18 @@
     return list;
   }
 
+  var ICONS = {
+    diana: '<circle cx="12" cy="12" r="8.5"/><circle cx="12" cy="12" r="3.6"/>',
+    chispa: '<path d="M12 3.5l1.9 5.6 5.6 1.9-5.6 1.9L12 18.5l-1.9-5.6L4.5 11l5.6-1.9z"/>',
+    corazon: '<path d="M12 20s-7-4.6-7-9.3A3.8 3.8 0 0 1 12 8a3.8 3.8 0 0 1 7 2.7C19 15.4 12 20 12 20z"/>',
+    brujula: '<circle cx="12" cy="12" r="8.5"/><path d="M15.2 8.8l-1.7 4.7-4.7 1.7 1.7-4.7z"/>'
+  };
+
+  function svgIcon(name) {
+    var inner = ICONS[name];
+    return inner ? '<svg viewBox="0 0 24 24" aria-hidden="true">' + inner + '</svg>' : '';
+  }
+
   var toastTimer = null;
   function toast(message) {
     var el = $('toast');
@@ -118,6 +132,7 @@
         id: t.id || slugify(t.name),
         name: t.name || t.id,
         color: t.color || '#c8a06a',
+        icon: t.icon || '',
         subtitle: t.subtitle || ''
       };
     });
@@ -208,7 +223,20 @@
     return state.byId[id];
   }
 
-  /* ---------------- favoritos e historial ---------------- */
+  function returnToBag(game) {
+    var entry = state.bag[game.theme];
+    if (!entry) return;
+    var seen = entry.seen.lastIndexOf(game.id);
+    if (seen !== -1) entry.seen.splice(seen, 1);
+    if (entry.pending.indexOf(game.id) === -1) {
+      // Vuelve a la cola, pero no a los primeros puestos: si no, reaparece enseguida.
+      var floor = Math.min(2, entry.pending.length);
+      entry.pending.splice(floor + randomInt(entry.pending.length - floor + 1), 0, game.id);
+    }
+    save(K.bag, state.bag);
+  }
+
+  /* ---------------- favoritos, historial y pegatinas ---------------- */
 
   function isFavorite(id) { return state.favorites.indexOf(id) !== -1; }
 
@@ -223,6 +251,13 @@
     state.history.unshift({ id: id, at: Date.now() });
     state.history = state.history.slice(0, HISTORY_MAX);
     save(K.history, state.history);
+  }
+
+  function addSticker(game) {
+    state.stickers.push({ id: game.id, theme: game.theme, at: Date.now() });
+    if (state.stickers.length > 200) state.stickers = state.stickers.slice(-200);
+    save(K.stickers, state.stickers);
+    return state.stickers.length;
   }
 
   /* ---------------- reproducción: grabación, mp3 o voz del sistema ---------------- */
@@ -521,6 +556,12 @@
           this.note(659.25, 0, 0.1, 'triangle', 0.07);
           this.note(440, 0.08, 0.16, 'triangle', 0.07);
           break;
+        case 'stamp':
+          [659.25, 880, 1174.66].forEach(function (f, n) {
+            sound.note(f, n * 0.09, 0.32, 'triangle', 0.11);
+          });
+          this.note(1567.98, 0.3, 0.4, 'sine', 0.07);
+          break;
         case 'timer':
           this.note(523.25, 0, 0.09, 'square', 0.05);
           this.note(783.99, 0.1, 0.14, 'square', 0.05);
@@ -573,14 +614,20 @@
   function renderThemes() {
     var wrap = $('themes');
     wrap.textContent = '';
-    state.themes.forEach(function (theme) {
+    state.themes.forEach(function (theme, index) {
       var count = (state.byTheme[theme.id] || []).length;
       var btn = document.createElement('button');
       btn.type = 'button';
       btn.className = 'theme';
       btn.style.setProperty('--c', theme.color);
-      btn.innerHTML = '<span class="theme__count">' + count + '</span>' +
-        '<span class="theme__name"></span><span class="theme__sub"></span>';
+      // Las bandas de los extremos son más estrechas: así la pila parece un tótem.
+      var middle = (state.themes.length - 1) / 2;
+      var width = middle ? 100 - 15 * (Math.abs(middle - index) / middle) : 100;
+      btn.style.setProperty('--w', width.toFixed(1) + '%');
+      btn.innerHTML = '<span class="theme__icon">' + svgIcon(theme.icon) + '</span>' +
+        '<span class="theme__text"><span class="theme__name"></span>' +
+        '<span class="theme__sub"></span></span>' +
+        '<span class="theme__count">' + count + '</span>';
       btn.querySelector('.theme__name').textContent = theme.name;
       btn.querySelector('.theme__sub').textContent = theme.subtitle;
       btn.addEventListener('click', function () { openTheme(theme.id, false); });
@@ -596,14 +643,21 @@
     state.game = null;
     setThemeColor(theme.color);
     $('play-theme').textContent = surprise ? 'Sorpréndeme' : theme.name;
-    $('stage').classList.remove('has-card');
+    resetToSpin();
+    showView('play');
+  }
+
+  function resetToSpin() {
+    state.game = null;
     $('card').hidden = true;
     $('actions').hidden = true;
+    $('decide').hidden = true;
     $('recorder').hidden = true;
+    $('reel').hidden = true;
     $('btn-fav').hidden = true;
     $('btn-spin').hidden = false;
+    stopPlayback();
     stopTimer(true);
-    showView('play');
   }
 
   function randomTheme() {
@@ -623,30 +677,53 @@
     var game = draw(themeId);
     if (!game) { toast('Este tema todavía no tiene juegos'); return; }
 
-    var btn = $('btn-spin');
-    var reduced = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-    var delay = reduced ? 0 : 700;
-
     sound.play('spin');
 
-    if (delay) {
-      btn.classList.add('is-spinning');
-      setTimeout(function () { btn.classList.remove('is-spinning'); showGame(game); }, delay);
-    } else {
-      showGame(game);
-    }
+    var reduced = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if (reduced) { showGame(game); return; }
+    runReel(themeId, game, function () { showGame(game); });
+  }
+
+  /* La ficha elegida llega como en una tragaperras que va frenando. */
+  var ROW = 62;
+
+  function runReel(themeId, winner, done) {
+    var reel = $('reel');
+    var track = $('reel-track');
+    var others = (state.byTheme[themeId] || []).filter(function (g) { return g.id !== winner.id; });
+    var names = shuffle(others.slice()).slice(0, 7).map(function (g) { return g.title; });
+    if (!names.length) names = [winner.title, winner.title];
+    names.push(winner.title);
+
+    track.textContent = '';
+    names.forEach(function (name, i) {
+      var row = document.createElement('div');
+      row.className = 'reel__item' + (i === names.length - 1 ? ' is-win' : '');
+      row.textContent = name;
+      track.appendChild(row);
+    });
+
+    $('btn-spin').hidden = true;
+    $('card').hidden = true;
+    reel.hidden = false;
+    track.style.transition = 'none';
+    track.style.transform = 'translateY(0)';
+    void track.offsetHeight;
+    track.style.transition = 'transform 1.05s cubic-bezier(.16,.72,.18,1)';
+    track.style.transform = 'translateY(-' + ((names.length - 2) * ROW) + 'px)';
+
+    setTimeout(function () { reel.hidden = true; done(); }, 1090);
   }
 
   function showGame(game) {
     state.game = game;
     stopPlayback();
     stopTimer(true);
-    pushHistory(game.id);
-
     $('btn-spin').hidden = true;
-    $('stage').classList.add('has-card');
+    $('reel').hidden = true;
     $('card').hidden = false;
     $('actions').hidden = false;
+    $('decide').hidden = false;
     $('btn-fav').hidden = false;
 
     var themeName = (state.themes.filter(function (t) { return t.id === game.theme; })[0] || {}).name || '';
@@ -663,13 +740,17 @@
     $('card-needs').hidden = !needs.length;
     $('card-title').textContent = game.title;
 
-    var steps = $('card-steps');
-    steps.textContent = '';
+    var list = $('card-steps');
+    list.textContent = '';
     game.steps.forEach(function (step) {
       var li = document.createElement('li');
       li.textContent = step;
-      steps.appendChild(li);
+      list.appendChild(li);
     });
+    steps.list = game.steps;
+    steps.index = 0;
+    renderStep();
+    setStepsMode(!!state.settings.allSteps);
 
     $('btn-fav').setAttribute('aria-pressed', isFavorite(game.id) ? 'true' : 'false');
     sound.play('reveal');
@@ -677,6 +758,56 @@
     $('recorder').hidden = true;
 
     if (state.settings.voice) listen(game);
+  }
+
+  var steps = { list: [], index: 0, all: false };
+
+  function renderStep() {
+    var list = steps.list;
+    $('stepper-text').textContent = list[steps.index] || '';
+    $('stepper-hint').textContent = list.length < 2 ? ''
+      : (steps.index === list.length - 1 ? 'Toca para volver al primero' : 'Toca para el siguiente paso');
+
+    var dots = $('dots');
+    dots.textContent = '';
+    if (list.length > 1) {
+      list.forEach(function (_, i) {
+        var dot = document.createElement('span');
+        dot.className = 'dot' + (i === steps.index ? ' is-on' : '');
+        dots.appendChild(dot);
+      });
+    }
+  }
+
+  function setStepsMode(all) {
+    steps.all = all;
+    $('stepper').hidden = all;
+    $('dots').hidden = all;
+    $('card-steps').hidden = !all;
+    $('btn-all-steps').textContent = all ? 'Ver paso a paso' : 'Ver todos los pasos';
+  }
+
+  function markDone() {
+    var game = state.game;
+    if (!game) return;
+    pushHistory(game.id);
+    var total = addSticker(game);
+    stopPlayback();
+    stopTimer(true);
+    sound.play('stamp');
+    showStamp(game, total);
+  }
+
+  function showStamp(game, total) {
+    var theme = state.themes.filter(function (t) { return t.id === game.theme; })[0];
+    $('stamp-art').innerHTML = svgIcon(theme ? theme.icon : '');
+    $('stamp-art').style.setProperty('--c', theme ? theme.color : '#c8a06a');
+    $('stamp-label').textContent = total === 1 ? 'Tu primera pegatina' : 'Ya van ' + total + ' pegatinas';
+    $('stamp').hidden = false;
+    setTimeout(function () {
+      $('stamp').hidden = true;
+      resetToSpin();
+    }, 1700);
   }
 
   function openGameById(id) {
@@ -710,6 +841,20 @@
     $('set-sounds').checked = !!state.settings.sounds;
     $('set-rate').value = state.settings.rate;
     $('set-rate-value').textContent = Number(state.settings.rate).toFixed(1);
+
+    $('count-stamps').textContent = state.stickers.length;
+    var board = $('board');
+    board.textContent = '';
+    state.stickers.slice(-72).forEach(function (stamp) {
+      var theme = state.themes.filter(function (t) { return t.id === stamp.theme; })[0];
+      var el = document.createElement('span');
+      el.className = 'sticker';
+      el.style.setProperty('--c', theme ? theme.color : '#c8a06a');
+      el.innerHTML = svgIcon(theme ? theme.icon : '');
+      var game = state.byId[stamp.id];
+      if (game) el.title = game.title;
+      board.appendChild(el);
+    });
 
     var favs = state.favorites.filter(function (id) { return state.byId[id]; });
     $('count-fav').textContent = favs.length;
@@ -798,7 +943,26 @@
     $('btn-back').addEventListener('click', function () { history.back(); });
     $('btn-back-settings').addEventListener('click', function () { history.back(); });
     $('btn-spin').addEventListener('click', spin);
-    $('btn-again').addEventListener('click', spin);
+
+    $('btn-again').addEventListener('click', function () {
+      // Descartar no gasta: el juego vuelve a la bolsa.
+      if (state.game) returnToBag(state.game);
+      spin();
+    });
+
+    $('btn-done').addEventListener('click', markDone);
+
+    $('stepper').addEventListener('click', function () {
+      if (steps.list.length < 2) return;
+      steps.index = (steps.index + 1) % steps.list.length;
+      renderStep();
+    });
+
+    $('btn-all-steps').addEventListener('click', function () {
+      setStepsMode(!steps.all);
+      state.settings.allSteps = steps.all;
+      save(K.settings, state.settings);
+    });
 
     $('btn-listen').addEventListener('click', function () {
       if (!state.game) return;

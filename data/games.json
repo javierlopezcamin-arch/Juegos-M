@@ -5,25 +5,29 @@
       "id": "concentracion",
       "name": "Concentración",
       "color": "#5B8DB8",
-      "subtitle": "Volver a lo que tengo delante"
+      "subtitle": "Volver a lo que tengo delante",
+      "icon": "diana"
     },
     {
       "id": "creatividad",
       "name": "Creatividad",
       "color": "#E08A3C",
-      "subtitle": "Inventar sin que nadie corrija"
+      "subtitle": "Inventar sin que nadie corrija",
+      "icon": "chispa"
     },
     {
       "id": "gratitud",
       "name": "Gratitud",
       "color": "#6FA57C",
-      "subtitle": "Darse cuenta de lo que ya hay"
+      "subtitle": "Darse cuenta de lo que ya hay",
+      "icon": "corazon"
     },
     {
       "id": "viaje",
       "name": "Viaje",
       "color": "#8A6FB0",
-      "subtitle": "Irse lejos sin moverse"
+      "subtitle": "Irse lejos sin moverse",
+      "icon": "brujula"
     }
   ],
   "games": [
