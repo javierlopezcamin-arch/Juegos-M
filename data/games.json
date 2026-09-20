@@ -35,630 +35,914 @@
       "id": "conc-cazador-de-sonidos",
       "theme": "concentracion",
       "title": "Cazador de sonidos",
-      "duration": 8,
-      "script": "Ponte cómodo y cierra los ojos. Durante un rato vas a escuchar todo lo que suena a tu alrededor, sin buscar nada en concreto. Cada vez que reconozcas un sonido nuevo, cuéntalo en silencio. Cuando llegues a cinco, abre los ojos despacio y dilos en voz alta, uno detrás de otro.",
+      "duration": 4,
+      "script": "Cierra los ojos un momentito y escucha bien. ¿Qué sonidos oyes? Cuando oigas uno, señala hacia ese lado con el dedo. Busquemos dos sonidos distintos. Cuando los tengas, abre los ojos y dilos en voz alta.",
       "steps": [
-        "Siéntate cómodo y cierra los ojos.",
-        "Cuenta en silencio cada sonido distinto que oigas.",
-        "Al llegar a cinco, abre los ojos y nómbralos en voz alta."
+        "Cierra los ojos y escucha con atención.",
+        "Cuando oigas un sonido, señala hacia ese lado.",
+        "Abre los ojos y di los dos sonidos que oíste."
+      ],
+      "players": "1 a 3 jugadores",
+      "ages": "desde 4 años",
+      "tags": [
+        "peques"
       ]
     },
     {
       "id": "conc-respiracion-cuadrada",
       "theme": "concentracion",
-      "title": "Respiración cuadrada",
-      "duration": 8,
-      "script": "Vas a dibujar un cuadrado con tu respiración. Toma aire contando hasta cuatro. Aguanta contando hasta cuatro. Suelta el aire contando hasta cuatro. Y espera, con los pulmones vacíos, contando hasta cuatro otra vez. Ese es un lado, otro lado, otro y otro. Repite el cuadrado seis veces sin prisa.",
+      "title": "Huele la flor, apaga la vela",
+      "duration": 4,
+      "script": "Vamos a respirar como una flor y una vela. Primero, huele una flor imaginaria: toma aire despacio por la nariz. Ahora apaga una vela imaginaria: suelta el aire despacio por la boca. Hazlo cuatro veces, sin prisa.",
       "steps": [
-        "Toma aire contando hasta cuatro.",
-        "Aguanta cuatro, suelta cuatro, espera cuatro.",
-        "Repite el cuadrado seis veces."
+        "Huele la flor: toma aire despacio por la nariz.",
+        "Apaga la vela: suelta el aire despacio por la boca.",
+        "Repítelo cuatro veces."
+      ],
+      "players": "1 a 3 jugadores",
+      "ages": "desde 4 años",
+      "tags": [
+        "peques"
       ]
     },
     {
       "id": "conc-la-mano-lenta",
       "theme": "concentracion",
-      "title": "La mano lenta",
-      "duration": 10,
-      "script": "Pon una mano delante de ti, con la palma hacia arriba. Vas a llevarla hasta tu hombro tan despacio que casi no se note el movimiento. Tan despacio que si alguien te mirase, dudaría de si te estás moviendo. Si tu cabeza se va a otro sitio, no pasa nada, vuelve a mirar la mano. Cuando llegues al hombro, hazlo de vuelta.",
+      "title": "La mano caracol",
+      "duration": 4,
+      "script": "Tu mano va a ser un caracol muy lento. Ponla delante con la palma hacia arriba y llévala hasta tu hombro tan despacio como un caracol, sin parar. Cuando llegue, dile hola al hombro. Ahora que baje otra vez, igual de despacio.",
       "steps": [
-        "Pon una mano delante, con la palma hacia arriba.",
-        "Llévala al hombro tan despacio que casi no se note.",
-        "Cuando llegues, vuelve al punto de partida igual de lento."
+        "Pon la mano delante, como un caracol.",
+        "Llévala al hombro tan despacio como puedas.",
+        "Bájala otra vez igual de lento."
+      ],
+      "players": "1 a 3 jugadores",
+      "ages": "desde 4 años",
+      "tags": [
+        "peques"
       ]
     },
     {
       "id": "conc-cuenta-atras-con-trampa",
       "theme": "concentracion",
-      "title": "Cuenta atrás con trampa",
-      "duration": 10,
-      "script": "Vas a contar hacia atrás desde treinta hasta cero, en voz alta. La trampa es que los números acabados en cero o en cinco no se dicen: se dan con una palmada. Si te equivocas, no pasa nada, vuelves a empezar desde treinta. La idea no es acertar, es darte cuenta del momento exacto en que tu cabeza se despista.",
+      "title": "Palmada mágica",
+      "duration": 4,
+      "script": "Vamos a contar del uno al cinco, pero el número tres no se dice: se da una palmada. Uno, dos, palmada, cuatro, cinco. Cuéntalo tú ahora. Si te equivocas, no pasa nada, empezamos otra vez.",
       "steps": [
-        "Cuenta en voz alta desde treinta hasta cero.",
-        "Los números acabados en cero o cinco se sustituyen por una palmada.",
-        "Si te equivocas, empieza otra vez desde treinta."
+        "Cuenta del uno al cinco en voz alta.",
+        "Cuando llegues al tres, da una palmada en vez de decirlo.",
+        "Si te equivocas, empieza otra vez."
+      ],
+      "players": "1 a 3 jugadores",
+      "ages": "desde 4 años",
+      "tags": [
+        "peques"
       ]
     },
     {
       "id": "conc-el-objeto-invisible",
       "theme": "concentracion",
-      "title": "El objeto invisible",
-      "duration": 12,
-      "script": "Elige un objeto que tengas cerca y míralo durante un minuto entero, como si tuvieras que dibujarlo de memoria después. Fíjate en los bordes, en las marcas, en las partes que nunca miras. Luego cierra los ojos y descríbelo en voz alta con todo el detalle que puedas. Al terminar, ábrelos y comprueba qué se te había escapado.",
+      "title": "¿Qué falta?",
+      "duration": 5,
+      "script": "Pon tres juguetes en fila y mira cada uno con atención. Ahora cierra los ojos. Mientras los tienes cerrados, alguien quita uno de los juguetes y esconde las manos. Abre los ojos: ¿cuál falta?",
       "steps": [
-        "Elige un objeto cercano y obsérvalo un minuto entero.",
-        "Cierra los ojos y descríbelo en voz alta con todo detalle.",
-        "Abre los ojos y busca lo que se te había escapado."
+        "Mira tres juguetes puestos en fila.",
+        "Cierra los ojos mientras se esconde uno.",
+        "Abre los ojos y adivina cuál falta."
+      ],
+      "players": "2 a 3 jugadores",
+      "ages": "desde 4 años",
+      "materials": [
+        "tres juguetes pequeños"
+      ],
+      "tags": [
+        "peques"
       ]
     },
     {
       "id": "conc-pies-en-el-suelo",
       "theme": "concentracion",
-      "title": "Pies en el suelo",
-      "duration": 8,
-      "script": "Descálzate si puedes y apoya bien los dos pies en el suelo. Lleva la atención al pie derecho: al talón, a la planta, a cada dedo por separado. Luego al pie izquierdo, igual de despacio. Después nota los dos a la vez, como si fueran raíces. Termina moviendo los dedos y estirándote.",
+      "title": "Los pies dicen hola",
+      "duration": 4,
+      "script": "Quítate los zapatos si puedes. Mueve los dedos del pie derecho y dile hola. Ahora los del pie izquierdo. Da un pisotón fuerte con los dos pies a la vez. Por último, quédate quieto un momento notando el suelo debajo.",
       "steps": [
-        "Apoya los dos pies en el suelo, mejor descalzo.",
-        "Recorre con la atención el pie derecho y luego el izquierdo.",
-        "Nota los dos a la vez antes de mover los dedos y estirarte."
+        "Mueve los dedos del pie derecho y luego del izquierdo.",
+        "Da un pisotón fuerte con los dos pies.",
+        "Quédate quieto notando el suelo."
+      ],
+      "players": "1 a 3 jugadores",
+      "ages": "desde 4 años",
+      "tags": [
+        "peques"
       ]
     },
     {
       "id": "conc-el-hilo-del-dibujo",
       "theme": "concentracion",
-      "title": "El hilo del dibujo",
-      "duration": 12,
-      "script": "Coge un papel y algo para pintar. Vas a hacer un dibujo sin levantar nunca la punta del papel: una sola línea continua, del principio al final. Ve despacio, al ritmo de tu respiración. No importa qué salga. Cuando decidas que está terminado, levanta la mano y mira lo que ha aparecido.",
+      "title": "La línea loca",
+      "duration": 6,
+      "script": "Coge un papel y algo para pintar. Sin levantar la mano, haz una línea muy larga que dé vueltas por todo el papel. Cuando pares, mira bien el dibujo: ¿ves algún animal o alguna forma escondida dentro?",
       "steps": [
         "Coge papel y algo para pintar.",
-        "Dibuja con una sola línea, sin levantar la punta del papel.",
-        "Ve al ritmo de tu respiración y mira el resultado al terminar."
+        "Haz una línea larga sin levantar la mano.",
+        "Busca formas o animales escondidos en el dibujo."
+      ],
+      "players": "1 a 3 jugadores",
+      "ages": "desde 4 años",
+      "materials": [
+        "papel",
+        "algo para pintar"
+      ],
+      "tags": [
+        "peques"
       ]
     },
     {
       "id": "conc-la-vela-imaginaria",
       "theme": "concentracion",
-      "title": "La vela imaginaria",
-      "duration": 10,
-      "script": "Imagina que tienes delante una vela encendida, muy cerca de la boca. Vas a soplar tan suave y tan largo que la llama se incline, pero nunca se apague. Toma aire por la nariz sin ruido y suelta ese hilo de aire despacio. Diez veces. Si la llama se apaga en tu cabeza, enciéndela otra vez y sigue.",
+      "title": "Sopla la pluma",
+      "duration": 4,
+      "script": "Pon un trocito de papel muy ligero en la mesa. Sopla despacio para moverlo sin que se caiga al suelo. Prueba tres veces, cada vez soplando más flojito.",
       "steps": [
-        "Imagina una vela encendida muy cerca de tu boca.",
-        "Sopla tan suave y tan largo que se incline sin apagarse.",
-        "Repítelo diez veces, tomando aire por la nariz."
+        "Pon un papel ligero en la mesa.",
+        "Sopla despacio para moverlo sin tirarlo.",
+        "Repítelo tres veces, cada vez más flojito."
+      ],
+      "players": "1 a 3 jugadores",
+      "ages": "desde 4 años",
+      "materials": [
+        "un trocito de papel o una pluma"
+      ],
+      "tags": [
+        "peques"
       ]
     },
     {
       "id": "crea-tres-cosas-imposibles",
       "theme": "creatividad",
-      "title": "Tres cosas imposibles",
-      "duration": 10,
-      "script": "Vas a inventar tres cosas que no puedan existir de ninguna manera. Una que quepa en un bolsillo, otra del tamaño de una casa y otra que no se pueda ver. Dilas en voz alta y explícalas como si fueran de verdad: para qué sirven, quién las usa y qué pasa si se rompen.",
+      "title": "El animal mezclado",
+      "duration": 5,
+      "script": "Vamos a inventar un animal mezclando partes de otros. ¿Qué cabeza tiene? ¿Y las patas? ¿Y la cola? Cuando lo tengas completo, ponle un nombre y haz el sonido que hace.",
       "steps": [
-        "Inventa tres cosas imposibles: de bolsillo, enorme e invisible.",
-        "Dilas en voz alta y explica para qué sirven.",
-        "Cuenta qué pasaría si una de ellas se rompiera."
+        "Elige la cabeza, las patas y la cola de tres animales distintos.",
+        "Júntalos y ponle un nombre a tu animal nuevo.",
+        "Haz el sonido que crees que hace."
+      ],
+      "players": "1 a 3 jugadores",
+      "ages": "desde 4 años",
+      "tags": [
+        "peques"
       ]
     },
     {
       "id": "crea-la-maquina-inutil",
       "theme": "creatividad",
-      "title": "La máquina inútil",
-      "duration": 12,
-      "script": "Diseña una máquina que no sirva absolutamente para nada, pero que sea preciosa. Decide cuántas piezas tiene, qué ruido hace y de qué color es. Piensa dónde la pondrías si te la regalasen. Y ponle un nombre largo y serio, como si la hubiera inventado alguien muy importante.",
+      "title": "Sé una máquina",
+      "duration": 5,
+      "script": "Con tu cuerpo, vas a ser una máquina muy rara que no sirve para nada. Mueve los brazos como piezas y haz un ruido de motor. Cuando alguien te toque el botón imaginario, cambia de movimiento y de ruido.",
       "steps": [
-        "Diseña una máquina que no sirva para nada.",
-        "Decide sus piezas, su ruido y su color.",
-        "Ponle un nombre largo y serio."
+        "Mueve los brazos como si fueras una máquina.",
+        "Haz un ruido de motor mientras te mueves.",
+        "Al tocarte el botón, cambia de movimiento y de ruido."
+      ],
+      "players": "1 a 3 jugadores",
+      "ages": "desde 4 años",
+      "tags": [
+        "peques"
       ]
     },
     {
       "id": "crea-si-los-colores-sonaran",
       "theme": "creatividad",
       "title": "Si los colores sonaran",
-      "duration": 10,
-      "script": "Imagina que cada color tiene un sonido. Empieza por el rojo: ¿es un golpe, un zumbido, una risa? Sigue con el azul, el amarillo y el verde. Hazlos con la boca, en voz alta, aunque suenen raros. Luego mira a tu alrededor y prueba a sonar lo que ves.",
+      "duration": 4,
+      "script": "¿Cómo suena el color rojo? Puede ser un grito, un pum o una risa. Hazlo con la boca. Ahora prueba con el azul. ¿Suena distinto?",
       "steps": [
-        "Decide qué sonido tiene el rojo y hazlo en voz alta.",
-        "Haz lo mismo con el azul, el amarillo y el verde.",
-        "Mira a tu alrededor y sonoriza lo que ves."
+        "Decide qué sonido tiene el color rojo y hazlo.",
+        "Prueba con el color azul.",
+        "Compara si suenan distinto."
+      ],
+      "players": "1 a 3 jugadores",
+      "ages": "desde 4 años",
+      "tags": [
+        "peques"
       ]
     },
     {
       "id": "crea-un-cuento-en-tres-palabras",
       "theme": "creatividad",
-      "title": "Un cuento en tres palabras",
-      "duration": 12,
-      "script": "Que alguien te diga tres palabras que no tengan nada que ver entre sí. Si estás a solas, abre un libro por tres páginas al azar y coge la primera palabra de cada una. Con esas tres, cuenta un cuento entero: principio, lío y final. No lo pienses mucho antes de empezar, arranca y que el cuento se resuelva solo.",
+      "title": "¿Y luego qué pasó?",
+      "duration": 5,
+      "script": "Coge un muñeco o juguete. Empieza así: un día, el muñeco salió a pasear y... ¿qué pasó luego? Sigue inventando lo que quieras, sin miedo a decir tonterías.",
       "steps": [
-        "Consigue tres palabras al azar, de alguien o de un libro.",
-        "Cuenta con ellas un cuento con principio, lío y final.",
-        "Empieza sin pensarlo demasiado."
+        "Coge un muñeco y empieza: un día salió a pasear...",
+        "Sigue inventando qué pasó luego.",
+        "Termina el cuento como más te guste."
+      ],
+      "players": "1 a 3 jugadores",
+      "ages": "desde 4 años",
+      "materials": [
+        "un juguete o muñeco"
+      ],
+      "tags": [
+        "peques"
       ]
     },
     {
       "id": "crea-el-museo-de-lo-normal",
       "theme": "creatividad",
-      "title": "El museo de lo normal",
-      "duration": 10,
-      "script": "Coge un objeto cualquiera de los que usas a diario y preséntalo como si fuera la pieza más valiosa de un museo. Cuenta quién lo fabricó, en qué época, por qué es tan importante y qué misterio guarda. Habla como hablan los guías de museo, despacio y con respeto. Al final, invita a las visitas a pasar a la sala siguiente.",
+      "title": "Muéstramelo",
+      "duration": 4,
+      "script": "Elige tu juguete favorito y enséñaselo a alguien. Cuenta cómo se llama y por qué te gusta tanto. Deja que también lo toquen con cuidado.",
       "steps": [
-        "Elige un objeto corriente de tu casa.",
-        "Preséntalo como la pieza estrella de un museo.",
-        "Cuenta su origen, su época y su misterio."
+        "Elige tu juguete favorito.",
+        "Enséñalo y cuenta por qué te gusta.",
+        "Deja que lo toquen con cuidado."
+      ],
+      "players": "1 a 3 jugadores",
+      "ages": "desde 4 años",
+      "tags": [
+        "peques"
       ]
     },
     {
       "id": "crea-la-receta-imposible",
       "theme": "creatividad",
-      "title": "La receta imposible",
-      "duration": 8,
-      "script": "Vas a inventar una receta con ingredientes que no se pueden comprar: una cucharada de silencio, dos días de lluvia, un poco de la risa de alguien. Di los ingredientes, di cómo se mezclan y cuánto tiempo tarda en estar listo. Y dile a quién se la darías a probar.",
+      "title": "La cocinita mágica",
+      "duration": 5,
+      "script": "Vamos a cocinar algo imaginario. ¿Qué vas a preparar? Echa los ingredientes que quieras, aunque sean de mentira, y remueve la olla. Cuando esté listo, sirve un platito a alguien.",
       "steps": [
-        "Elige ingredientes que no se puedan comprar.",
-        "Explica cómo se mezclan y cuánto tardan.",
-        "Di a quién se la darías a probar."
+        "Decide qué plato imaginario vas a cocinar.",
+        "Echa los ingredientes y remueve la olla.",
+        "Sirve un platito a alguien."
+      ],
+      "players": "1 a 3 jugadores",
+      "ages": "desde 4 años",
+      "materials": [
+        "juguetes de cocinita o cojines"
+      ],
+      "tags": [
+        "peques"
       ]
     },
     {
       "id": "crea-mapa-de-un-lugar-que-no-existe",
       "theme": "creatividad",
-      "title": "Mapa de un lugar que no existe",
-      "duration": 14,
-      "script": "Dibuja el mapa de un sitio inventado. Empieza por la costa o por la frontera, lo que prefieras. Pon un río, una montaña y tres pueblos con nombre. Marca un lugar al que nadie va nunca y otro al que va todo el mundo. Cuando esté, cuenta en voz alta el camino de uno al otro.",
+      "title": "El camino del tesoro",
+      "duration": 6,
+      "script": "Dibuja un camino que empiece en una casa y termine en un tesoro. En medio, dibuja dos paradas, como un árbol o un río. Sigue el camino con el dedo desde la casa hasta el tesoro.",
       "steps": [
-        "Dibuja la costa o la frontera de un lugar inventado.",
-        "Añade un río, una montaña y tres pueblos con nombre.",
-        "Marca un sitio al que nadie va y otro al que va todo el mundo."
+        "Dibuja una casa a un lado del papel.",
+        "Dibuja un camino con dos paradas hasta un tesoro.",
+        "Sigue el camino con el dedo hasta llegar."
+      ],
+      "players": "1 a 3 jugadores",
+      "ages": "desde 4 años",
+      "materials": [
+        "papel",
+        "algo para pintar"
+      ],
+      "tags": [
+        "peques"
       ]
     },
     {
       "id": "crea-la-voz-de-las-cosas",
       "theme": "creatividad",
       "title": "La voz de las cosas",
-      "duration": 8,
-      "script": "Mira tres objetos de la habitación y dales voz. ¿Cómo habla una silla que lleva veinte años ahí? ¿Y una cuchara recién comprada? Haz que se digan algo entre ellos, aunque sea una tontería. Termina dejando que uno de los tres cuente un secreto.",
+      "duration": 4,
+      "script": "Coge dos juguetes. Ponle una voz muy rara a cada uno. Haz que se saluden y se digan algo gracioso el uno al otro.",
       "steps": [
-        "Elige tres objetos de la habitación.",
-        "Dales voz y haz que hablen entre ellos.",
-        "Deja que uno cuente un secreto."
+        "Coge dos juguetes.",
+        "Ponle una voz rara a cada uno.",
+        "Haz que se saluden y digan algo gracioso."
+      ],
+      "players": "1 a 3 jugadores",
+      "ages": "desde 4 años",
+      "tags": [
+        "peques"
       ]
     },
     {
       "id": "grat-tres-cosas-de-hoy",
       "theme": "gratitud",
-      "title": "Tres cosas de hoy",
-      "duration": 8,
-      "script": "Piensa en el día de hoy, desde que te despertaste hasta ahora mismo. Busca tres momentos que hayan estado bien, aunque sean pequeñísimos: un rato de sol, algo que te salió a la primera, alguien que te habló bien. Dilos en voz alta y, con cada uno, respira hondo una vez.",
+      "title": "Gracias a esto de aquí",
+      "duration": 4,
+      "script": "Mira a tu alrededor y señala una cosa que te haga feliz ahora mismo. Puede ser un juguete, la luz del sol o un cojín blandito. Dile gracias en voz alta.",
       "steps": [
-        "Repasa el día desde que te despertaste.",
-        "Encuentra tres momentos buenos, por pequeños que sean.",
-        "Dilos en voz alta y respira hondo con cada uno."
+        "Mira a tu alrededor.",
+        "Señala algo que te haga feliz ahora.",
+        "Dile gracias en voz alta."
+      ],
+      "players": "1 a 3 jugadores",
+      "ages": "desde 4 años",
+      "tags": [
+        "peques"
       ]
     },
     {
       "id": "grat-la-carta-que-no-envio",
       "theme": "gratitud",
-      "title": "La carta que no envío",
-      "duration": 12,
-      "script": "Piensa en alguien que te ayudó y nunca supo hasta qué punto. Escríbele una carta corta que no vas a mandar. Cuéntale qué hizo exactamente, qué pasó después gracias a eso y qué le dirías si lo tuvieras delante. Cuando termines, léela en voz baja, para ti.",
+      "title": "Un dibujo para regalar",
+      "duration": 6,
+      "script": "Piensa en alguien a quien quieres mucho. Dibújale algo bonito, como un corazón o una flor. Cuando lo veas, dale el dibujo con un abrazo.",
       "steps": [
-        "Piensa en alguien que te ayudó sin saberlo del todo.",
-        "Escríbele una carta corta que no vas a enviar.",
-        "Léela en voz baja al terminar."
+        "Piensa en alguien a quien quieres mucho.",
+        "Dibújale algo bonito.",
+        "Dáselo con un abrazo cuando lo veas."
+      ],
+      "players": "1 a 3 jugadores",
+      "ages": "desde 4 años",
+      "materials": [
+        "papel",
+        "algo para pintar"
+      ],
+      "tags": [
+        "peques"
       ]
     },
     {
       "id": "grat-gracias-a-mis-manos",
       "theme": "gratitud",
-      "title": "Gracias a mis manos",
-      "duration": 8,
-      "script": "Mírate las manos con calma, por delante y por detrás. Piensa en tres cosas que han hecho hoy por ti y que ni siquiera has notado. Luego en algo que sepan hacer bien y que te haya costado aprender. Termina apretándolas suave, una con la otra, durante unos segundos.",
+      "title": "Gracias, manitas",
+      "duration": 4,
+      "script": "Mira tus manos. Piensa en una cosa que han hecho hoy, como coger la cuchara o acariciar a alguien. Dales las gracias con un aplauso suave.",
       "steps": [
-        "Mírate las manos por delante y por detrás.",
-        "Recuerda tres cosas que han hecho hoy por ti.",
-        "Piensa en algo que sepan hacer y que costó aprender."
+        "Mira tus manos con atención.",
+        "Piensa en algo que han hecho hoy.",
+        "Dales las gracias con un aplauso suave."
+      ],
+      "players": "1 a 3 jugadores",
+      "ages": "desde 4 años",
+      "tags": [
+        "peques"
       ]
     },
     {
       "id": "grat-el-detalle-pequeno",
       "theme": "gratitud",
-      "title": "El detalle pequeño",
-      "duration": 10,
-      "script": "Busca a tu alrededor algo que esté ahí porque alguien lo puso. Una planta, un interruptor, una manta doblada. Piensa en quién lo hizo y en el trabajo que hay detrás, desde que se fabricó hasta que llegó aquí. Es una cadena larga de gente que no conoces. Quédate un momento con esa idea.",
+      "title": "Gracias por esto",
+      "duration": 4,
+      "script": "Busca algo en la habitación que uses todos los días, como una silla o una manta. Tócalo y di gracias por estar ahí.",
       "steps": [
-        "Encuentra algo que esté ahí porque alguien lo puso.",
-        "Piensa en toda la gente que hizo falta para que llegase.",
-        "Quédate un momento con esa idea."
+        "Busca algo que uses todos los días.",
+        "Tócalo con la mano.",
+        "Di gracias por estar ahí."
+      ],
+      "players": "1 a 3 jugadores",
+      "ages": "desde 4 años",
+      "tags": [
+        "peques"
       ]
     },
     {
       "id": "grat-quien-me-ayudo",
       "theme": "gratitud",
-      "title": "Quién me ayudó",
-      "duration": 10,
-      "script": "Recuerda un momento difícil que ya pasó. No hace falta volver al mal rato, solo a cómo saliste de él. ¿Quién estaba? ¿Qué hizo o qué dijo? A lo mejor no fue nadie y fuiste tú. Dilo en voz alta, como si se lo contaras a alguien que acaba de llegar.",
+      "title": "Un beso para quien me ayuda",
+      "duration": 4,
+      "script": "Piensa en alguien que te ayuda todos los días, como mamá, papá o tu profe. Manda un beso volando hacia esa persona. Si está cerca, dale un abrazo de verdad.",
       "steps": [
-        "Recuerda un momento difícil que ya quedó atrás.",
-        "Piensa en quién estuvo ahí y qué hizo.",
-        "Cuéntalo en voz alta, como a alguien que acaba de llegar."
+        "Piensa en alguien que te ayuda cada día.",
+        "Manda un beso volando hacia esa persona.",
+        "Si está cerca, dale un abrazo."
+      ],
+      "players": "1 a 3 jugadores",
+      "ages": "desde 4 años",
+      "tags": [
+        "peques"
       ]
     },
     {
       "id": "grat-mi-objeto-favorito",
       "theme": "gratitud",
-      "title": "Mi objeto favorito",
-      "duration": 8,
-      "script": "Piensa en un objeto tuyo que no venderías por nada. Recuerda cómo llegó a tus manos y por qué sigue ahí. Si puedes, ve a buscarlo y tenlo un rato contigo. Cuenta en voz alta una historia que haya vivido contigo.",
+      "title": "Cuido lo que quiero",
+      "duration": 4,
+      "script": "Ve a buscar un juguete que quieras mucho. Dale un abrazo y déjalo en un sitio bonito y ordenado, como agradeciéndole que esté contigo.",
       "steps": [
-        "Piensa en un objeto tuyo que no venderías.",
-        "Recuerda cómo llegó a tus manos.",
-        "Cuenta en voz alta una historia que vivió contigo."
+        "Busca un juguete que quieras mucho.",
+        "Dale un abrazo.",
+        "Déjalo en un sitio bonito y ordenado."
+      ],
+      "players": "1 a 3 jugadores",
+      "ages": "desde 4 años",
+      "tags": [
+        "peques"
       ]
     },
     {
       "id": "grat-un-dia-sin-esto",
       "theme": "gratitud",
-      "title": "Un día sin esto",
-      "duration": 12,
-      "script": "Elige algo tan normal que ni lo miras: el agua caliente, la luz al entrar, una cama. Imagina un día entero sin eso, con todo el detalle que puedas: qué harías al levantarte, cómo sería la tarde, cómo acabarías la noche. Luego vuelve aquí y date cuenta de que sí está.",
+      "title": "Gracias, agua",
+      "duration": 4,
+      "script": "Vamos a dar las gracias al agua. Toca un vaso de agua o el grifo y di gracias por poder beber, lavarte las manos y jugar con ella.",
       "steps": [
-        "Elige algo tan normal que ni lo miras.",
-        "Imagina con detalle un día entero sin ello.",
-        "Vuelve y date cuenta de que sí está."
+        "Toca un vaso de agua o el grifo.",
+        "Piensa para qué usas el agua hoy.",
+        "Di gracias por tenerla."
+      ],
+      "players": "1 a 3 jugadores",
+      "ages": "desde 4 años",
+      "tags": [
+        "peques"
       ]
     },
     {
       "id": "grat-la-lista-de-la-noche",
       "theme": "gratitud",
-      "title": "La lista de la noche",
-      "duration": 8,
-      "script": "Antes de dormir, haz una lista mental de lo que hoy ha salido bien. Empieza por lo más grande y ve bajando hasta lo más pequeño, hasta llegar a algo tan mínimo como un vaso de agua fría. Cuando ya no encuentres más, quédate en silencio y deja que el cuerpo se afloje.",
+      "title": "Buenas noches, gracias",
+      "duration": 4,
+      "script": "Antes de dormir, piensa en una cosa buena que ha pasado hoy. Puede ser pequeñita, como un beso o un juego. Dile buenas noches y gracias a esa cosa.",
       "steps": [
-        "Haz una lista mental de lo que hoy salió bien.",
-        "Ve de lo más grande a lo más pequeño.",
-        "Quédate en silencio y deja que el cuerpo se afloje."
+        "Piensa en algo bueno que pasó hoy.",
+        "Dile buenas noches a esa cosa.",
+        "Ciérralo con un gracias."
+      ],
+      "players": "1 a 3 jugadores",
+      "ages": "desde 4 años",
+      "tags": [
+        "peques"
       ]
     },
     {
       "id": "viaje-el-globo-de-papel",
       "theme": "viaje",
-      "title": "El globo de papel",
-      "duration": 12,
-      "script": "Túmbate y cierra los ojos. Estás subiendo en un globo hecho de papel muy fino, que se mueve despacio con el viento. Desde arriba ves los tejados, luego los campos, luego el dibujo entero del sitio donde vives. Hace fresco y no hay ningún ruido. Quédate ahí arriba un rato largo y baja cuando quieras, muy poco a poco.",
+      "title": "El globo que vuela",
+      "duration": 5,
+      "script": "Ponte de puntillas y levanta los brazos: estás subiendo en un globo. Mira hacia abajo y cuenta qué ves desde arriba. Ahora baja muy despacio, poco a poco, hasta tocar el suelo con los pies bien planos.",
       "steps": [
-        "Túmbate y cierra los ojos.",
-        "Sube en un globo de papel y mira lo que queda abajo.",
-        "Quédate arriba un rato y baja muy despacio."
+        "Ponte de puntillas y levanta los brazos.",
+        "Mira abajo y di qué ves desde el globo.",
+        "Baja despacio hasta tocar el suelo."
+      ],
+      "players": "1 a 3 jugadores",
+      "ages": "desde 4 años",
+      "tags": [
+        "peques"
       ]
     },
     {
       "id": "viaje-la-playa-de-noche",
       "theme": "viaje",
-      "title": "La playa de noche",
-      "duration": 14,
-      "script": "Imagina una playa vacía, de noche, con la arena aún tibia del día. Camina por la orilla y nota el agua fresca en los pies. Cada ola que llega se lleva algo que hoy te pesaba, y cada ola que se va lo deja en el fondo del mar. Siéntate en la arena, mira las luces lejanas y respira al ritmo de las olas.",
+      "title": "Arena calentita",
+      "duration": 4,
+      "script": "Vamos a caminar por una playa imaginaria. Camina de puntillas porque la arena quema un poquito. Ahora moja los pies en el agua fresca: da un saltito hacia atrás cuando llegue una ola.",
       "steps": [
-        "Imagina una playa vacía de noche, con la arena tibia.",
-        "Camina por la orilla y deja que cada ola se lleve algo.",
-        "Siéntate y respira al ritmo del agua."
+        "Camina de puntillas por la arena caliente.",
+        "Da un saltito cuando llegue una ola fresca.",
+        "Siéntate en la arena a descansar."
+      ],
+      "players": "1 a 3 jugadores",
+      "ages": "desde 4 años",
+      "tags": [
+        "peques"
       ]
     },
     {
       "id": "viaje-el-tren-que-no-para",
       "theme": "viaje",
-      "title": "El tren que no para",
-      "duration": 12,
-      "script": "Vas en un tren de noche, junto a la ventanilla. Fuera pasan pueblos con luces encendidas y gente que no vas a conocer nunca. Nadie te pide nada, no hay que bajarse en ninguna parada. El traqueteo es regular, como una respiración. Déjate llevar por el ruido del tren y mira pasar el paisaje sin pensar en nada.",
+      "title": "El tren chucuchú",
+      "duration": 5,
+      "script": "Vas a ser un tren. Mueve los brazos como ruedas y haz chucuchú mientras caminas por la habitación. Cuando digas pi pi, das una vuelta y sigues. Para en una estación y saluda a los pasajeros.",
       "steps": [
-        "Ve en tren de noche, junto a la ventanilla.",
-        "Mira pasar pueblos con luces encendidas.",
-        "Deja que el traqueteo marque tu respiración."
+        "Muévete por la habitación haciendo chucuchú.",
+        "Al decir pi pi, da una vuelta y sigue.",
+        "Para en una estación y saluda."
+      ],
+      "players": "1 a 3 jugadores",
+      "ages": "desde 4 años",
+      "tags": [
+        "peques"
       ]
     },
     {
       "id": "viaje-el-bosque-de-las-luces",
       "theme": "viaje",
-      "title": "El bosque de las luces",
-      "duration": 14,
-      "script": "Entras en un bosque al anochecer. Entre los árboles hay pequeñas luces que flotan y que se apartan cuando te acercas, como si jugaran. El suelo es blando de hojas. Sigue a una de las luces hasta un claro y siéntate allí. Las demás irán llegando, despacio, hasta rodearte.",
+      "title": "Sigue la luz",
+      "duration": 5,
+      "script": "Apaga un poco la luz y enciende una linterna. Alguien mueve la luz despacio por la pared o el suelo. Persigue la luz con la mano sin dejarla escapar.",
       "steps": [
-        "Entra en un bosque al anochecer, con el suelo blando.",
-        "Sigue a una de las luces que flotan entre los árboles.",
-        "Siéntate en el claro y deja que las demás lleguen."
+        "Baja un poco la luz y enciende una linterna.",
+        "Alguien mueve la luz despacio.",
+        "Persíguela con la mano."
+      ],
+      "players": "1 a 3 jugadores",
+      "ages": "desde 4 años",
+      "materials": [
+        "una linterna o el móvil"
+      ],
+      "tags": [
+        "peques"
       ]
     },
     {
       "id": "viaje-la-casa-en-el-arbol",
       "theme": "viaje",
-      "title": "La casa en el árbol",
-      "duration": 12,
-      "script": "Sube por una escalera de cuerda hasta una casa de madera construida en un árbol enorme. Dentro hay una manta, una ventana y justo lo que a ti te gustaría que hubiera. Nadie sabe que estás aquí. Mira por la ventana cómo se mueven las hojas y quédate hasta que te entre sueño.",
+      "title": "Mi casita escondida",
+      "duration": 6,
+      "script": "Con una manta o unos cojines, construye una casita pequeña. Métete dentro y ponte cómodo. Cuenta qué te gustaría tener dentro de tu casita.",
       "steps": [
-        "Sube por una escalera de cuerda hasta una casa en un árbol.",
-        "Coloca dentro lo que a ti te gustaría que hubiera.",
-        "Mira por la ventana y quédate hasta que te entre sueño."
+        "Construye una casita con manta o cojines.",
+        "Métete dentro y ponte cómodo.",
+        "Cuenta qué te gustaría tener ahí dentro."
+      ],
+      "players": "1 a 3 jugadores",
+      "ages": "desde 4 años",
+      "materials": [
+        "una manta o cojines"
+      ],
+      "tags": [
+        "peques"
       ]
     },
     {
       "id": "viaje-el-fondo-del-mar",
       "theme": "viaje",
-      "title": "El fondo del mar",
-      "duration": 16,
-      "script": "Bajas al mar muy despacio, y aquí abajo se puede respirar sin problema. La luz llega en rayos que se mueven. Pasan peces que no tienen ninguna prisa y el agua te sostiene entera, sin que tengas que hacer fuerza. Apóyate en la arena del fondo y quédate quieto, notando cómo todo se mueve lento a tu alrededor.",
+      "title": "Nado como un pez",
+      "duration": 5,
+      "script": "Vamos a nadar como peces por el fondo del mar. Mueve los brazos despacio como si fueran aletas y camina muy suave, como flotando. Abre y cierra la boca como los peces.",
       "steps": [
-        "Baja al fondo del mar, donde aquí sí se puede respirar.",
-        "Mira la luz y los peces que pasan sin prisa.",
-        "Apóyate en la arena y nota cómo el agua te sostiene."
+        "Mueve los brazos como aletas de pez.",
+        "Camina despacio como si flotaras.",
+        "Abre y cierra la boca como un pez."
+      ],
+      "players": "1 a 3 jugadores",
+      "ages": "desde 4 años",
+      "tags": [
+        "peques"
       ]
     },
     {
       "id": "viaje-la-nave-lenta",
       "theme": "viaje",
-      "title": "La nave lenta",
-      "duration": 16,
-      "script": "Estás en una nave que viaja muy despacio entre las estrellas. No hay motores ruidosos ni emergencias, solo una ventana grande y silencio. Fuera, las estrellas tardan horas en cambiar de sitio. Tu cuerpo pesa muy poco. Elige una estrella y quédate mirándola hasta que dejes de pensar en el resto.",
+      "title": "Paseo de astronauta",
+      "duration": 5,
+      "script": "Vamos a caminar como si estuviéramos en la luna, donde todo pesa menos. Da pasos muy despacio y grandes, como flotando. Toca una estrella imaginaria con la mano.",
       "steps": [
-        "Viaja en una nave silenciosa entre las estrellas.",
-        "Nota que tu cuerpo pesa muy poco.",
-        "Elige una estrella y quédate mirándola."
+        "Camina muy despacio, como si flotaras.",
+        "Da pasos grandes como en la luna.",
+        "Toca una estrella con la mano."
+      ],
+      "players": "1 a 3 jugadores",
+      "ages": "desde 4 años",
+      "tags": [
+        "peques"
       ]
     },
     {
       "id": "viaje-el-desierto-al-amanecer",
       "theme": "viaje",
-      "title": "El desierto al amanecer",
-      "duration": 14,
-      "script": "Estás sentado en una duna, justo antes de que salga el sol. Hace fresco y la arena todavía guarda el frío de la noche. El cielo se va poniendo naranja muy poco a poco, sin que puedas ver el momento exacto en que cambia. Cuando el sol asome, nota el calor llegando a tu cara y quédate ahí, sin hacer nada más.",
+      "title": "El sol se despierta",
+      "duration": 5,
+      "script": "Agáchate como si durmieras, hecho una bolita. Poco a poco, estírate hacia arriba como el sol que se despierta. Levanta los brazos bien alto y sonríe al sol.",
       "steps": [
-        "Siéntate en una duna antes de que salga el sol.",
-        "Mira cómo el cielo cambia de color muy poco a poco.",
-        "Nota el calor en la cara cuando el sol asome."
+        "Agáchate hecho una bolita, dormido.",
+        "Estírate despacio hacia arriba.",
+        "Levanta los brazos y sonríe al sol."
+      ],
+      "players": "1 a 3 jugadores",
+      "ages": "desde 4 años",
+      "tags": [
+        "peques"
       ]
     },
     {
       "id": "conc-radar-de-sonidos",
       "theme": "concentracion",
       "title": "Radar de sonidos",
-      "duration": 8,
-      "script": "Cierra los ojos y quédate quieto diez segundos, escuchando todo lo que suena alrededor. Cuando los abras, di en voz alta tres sonidos que recuerdes con detalle. Después cierra otra vez los ojos e intenta cazar uno que antes se te hubiera escapado.",
+      "duration": 4,
+      "script": "Cierra los ojos y quédate muy quieto. Escucha todo lo que suena a tu alrededor. Cuando oigas algo, levanta un dedo. Cuando tengas dos dedos levantados, abre los ojos y cuenta qué has oído.",
       "steps": [
-        "Cierra los ojos diez segundos y escucha todo lo que suena.",
-        "Abre los ojos y di tres sonidos que recuerdes con detalle.",
-        "Repite una vez más buscando un sonido nuevo."
+        "Cierra los ojos y quédate quieto.",
+        "Levanta un dedo cada vez que oigas un sonido.",
+        "Con dos dedos levantados, abre los ojos y cuenta qué oíste."
+      ],
+      "players": "1 a 3 jugadores",
+      "ages": "desde 4 años",
+      "tags": [
+        "peques"
       ]
     },
     {
       "id": "conc-cazador-de-detalles",
       "theme": "concentracion",
-      "title": "Cazador de detalles",
-      "duration": 8,
-      "script": "Mira a tu alrededor y elige un objeto cualquiera. Durante medio minuto, descríbelo en voz alta sin parar: sus colores, sus formas, su textura, las marcas que tenga. Luego cierra los ojos y repite la descripción entera de memoria. Al abrirlos, comprueba qué detalle se te había olvidado.",
+      "title": "¿De qué color era?",
+      "duration": 4,
+      "script": "Elige un juguete y mira bien de qué color es. Cierra los ojos y di el color en voz alta sin mirar. Ábrelos y comprueba si acertaste.",
       "steps": [
-        "Elige un objeto cualquiera que tengas delante.",
-        "Descríbelo en voz alta treinta segundos: colores, formas, texturas.",
-        "Cierra los ojos, repite la descripción y comprueba qué olvidaste."
+        "Elige un juguete y mira su color.",
+        "Cierra los ojos y di el color en voz alta.",
+        "Abre los ojos y comprueba si acertaste."
+      ],
+      "players": "1 a 3 jugadores",
+      "ages": "desde 4 años",
+      "tags": [
+        "peques"
       ]
     },
     {
       "id": "conc-cuenta-lenta",
       "theme": "concentracion",
-      "title": "Cuenta lenta",
-      "duration": 8,
-      "script": "Busca un punto fijo delante de ti y conviértelo en tu ancla. Cuenta del uno al veinte muy despacio, sin apartar la vista de ese punto. Si la cabeza se te va a otro sitio, no pasa nada: vuelve al punto y retoma la cuenta donde la dejaste.",
+      "title": "Cuenta hasta cinco",
+      "duration": 4,
+      "script": "Busca un punto fijo, como un peluche, y no le quites ojo. Cuenta muy despacio del uno al cinco mientras lo miras. Si te despistas, no pasa nada: vuelve a mirarlo y sigue contando.",
       "steps": [
-        "Elige un punto fijo delante de ti: es tu ancla.",
-        "Cuenta muy despacio del uno al veinte sin perderlo de vista.",
-        "Si te despistas, vuelve al punto y sigue donde lo dejaste."
+        "Elige un peluche o un punto para mirar.",
+        "Cuenta despacio del uno al cinco sin dejar de mirarlo.",
+        "Si te despistas, vuelve a mirarlo y sigue."
+      ],
+      "players": "1 a 3 jugadores",
+      "ages": "desde 4 años",
+      "tags": [
+        "peques"
       ]
     },
     {
       "id": "conc-seguir-al-lider",
       "theme": "concentracion",
       "title": "Seguir al líder",
-      "duration": 10,
+      "duration": 5,
       "players": "2 jugadores o más",
-      "script": "Una persona hace de líder y elige un movimiento sencillo, como levantar la mano o dar golpecitos en la mesa. Los demás lo copian exactamente al ritmo que marque, sin adelantarse ni quedarse atrás. Cada medio minuto cambia el líder y cambia el movimiento.",
+      "script": "Una persona es el líder y hace un movimiento sencillo, como aplaudir o saltar. Los demás lo copian igual. Cada poco tiempo, cambia el líder y el movimiento.",
       "steps": [
-        "El líder elige un movimiento sencillo.",
-        "Los demás lo copian a su ritmo exacto, sin adelantarse.",
-        "Cada treinta segundos cambia el líder y el movimiento."
+        "El líder hace un movimiento sencillo.",
+        "Los demás lo copian igual.",
+        "Cambia de líder y de movimiento."
+      ],
+      "ages": "desde 4 años",
+      "tags": [
+        "peques"
       ]
     },
     {
       "id": "conc-foto-mental",
       "theme": "concentracion",
-      "title": "Foto mental",
-      "duration": 8,
-      "script": "Mira la escena que tienes delante como si fueras a hacerle una foto con la cabeza. Ciérrala de golpe, cerrando los ojos, y mira esa foto por dentro: recuerda tres cosas que aparecen en ella. Luego abre los ojos y comprueba si tu foto coincide con lo que hay de verdad.",
+      "title": "Foto con los ojos",
+      "duration": 4,
+      "script": "Mira bien lo que tienes delante, como si fueras a hacer una foto. Cierra los ojos y di una cosa que recuerdes. Abre los ojos y comprueba si estaba ahí.",
       "steps": [
-        "Mira lo que tienes delante como si fueras a fotografiarlo.",
-        "Cierra los ojos y recuerda tres cosas de esa foto mental.",
-        "Abre los ojos y comprueba qué coincide y qué falta."
+        "Mira bien lo que tienes delante.",
+        "Cierra los ojos y di una cosa que recuerdes.",
+        "Abre los ojos y comprueba si acertaste."
+      ],
+      "players": "1 a 3 jugadores",
+      "ages": "desde 4 años",
+      "tags": [
+        "peques"
       ]
     },
     {
       "id": "crea-historia-de-tres-objetos",
       "theme": "creatividad",
-      "title": "Historia de tres objetos",
-      "duration": 10,
-      "script": "Coge tres objetos que tengas cerca y ponlos delante de ti. Van a ser los personajes de una historia que te vas a inventar ahora mismo, con su principio, su lío y su final. Cuéntala en voz alta en menos de un minuto y no dejes que nadie te corrija por el camino.",
+      "title": "Dos amigos juguetes",
+      "duration": 4,
+      "script": "Elige dos juguetes que van a ser amigos. Haz que se saluden. Ahora haz que hagan algo divertido juntos, como bailar o dar un paseo.",
       "steps": [
-        "Coloca delante de ti tres objetos que tengas cerca.",
-        "Invéntate una historia donde sean los personajes.",
-        "Cuéntala en voz alta en menos de un minuto."
+        "Elige dos juguetes que serán amigos.",
+        "Haz que se saluden.",
+        "Haz que hagan algo divertido juntos."
+      ],
+      "players": "1 a 3 jugadores",
+      "ages": "desde 4 años",
+      "tags": [
+        "peques"
       ]
     },
     {
       "id": "crea-final-diferente",
       "theme": "creatividad",
-      "title": "Final diferente",
-      "duration": 10,
-      "script": "Piensa en un cuento o una película que te sepas de memoria. Ahora cámbiale el final entero: que pase algo inesperado, divertido o directamente imposible. Explica tu nuevo final en voz alta, y cuanto más loca sea la idea, mejor.",
+      "title": "Cambia el cuento",
+      "duration": 5,
+      "script": "Piensa en un cuento que te sepas muy bien, como Caperucita. Ahora cambia una cosa: ¿y si el lobo se hace amigo de la abuela? Cuenta cómo sería.",
       "steps": [
-        "Piensa en un cuento o una película que conozcas bien.",
-        "Cámbiale el final por algo inesperado, divertido o imposible.",
-        "Explícalo en voz alta sin descartar ninguna idea."
+        "Piensa en un cuento que conozcas bien.",
+        "Cambia una sola cosa del cuento.",
+        "Cuenta cómo sería esa parte nueva."
+      ],
+      "players": "1 a 3 jugadores",
+      "ages": "desde 4 años",
+      "tags": [
+        "peques"
       ]
     },
     {
       "id": "crea-superpoder-del-dia",
       "theme": "creatividad",
-      "title": "Superpoder del día",
-      "duration": 10,
+      "title": "Tu superpoder de hoy",
+      "duration": 5,
       "players": "2 jugadores o más",
-      "script": "Elige un superpoder que tengas solo por hoy, como entender a los animales o parar el tiempo diez segundos. Cuenta cómo lo usarías aquí mismo, en el sitio donde estás ahora. Luego pide a otra persona que proponga un uso más y añádelo a tu historia sin decir que no.",
+      "script": "Elige un superpoder para hoy, como volar o ser invisible. Muévete por la habitación como si lo tuvieras de verdad. Si jugáis dos, el otro adivina qué superpoder es.",
       "steps": [
-        "Elige un superpoder que tengas solo hoy.",
-        "Cuenta cómo lo usarías en el sitio donde estás ahora.",
-        "Que otra persona proponga otro uso y añádelo sin decir que no."
+        "Elige un superpoder para hoy.",
+        "Muévete por la habitación como si lo tuvieras.",
+        "Que alguien adivine cuál es."
+      ],
+      "ages": "desde 4 años",
+      "tags": [
+        "peques"
       ]
     },
     {
       "id": "crea-inventor-de-reglas",
       "theme": "creatividad",
-      "title": "Inventor de reglas",
-      "duration": 12,
+      "title": "Una regla nueva",
+      "duration": 5,
       "players": "2 jugadores o más",
-      "script": "Elegid entre todos un juego clásico: el pilla pilla, el escondite, Simón dice, el que queráis. Inventad una regla nueva que no haya existido nunca, aunque suene absurda. Y jugad una ronda corta aplicándola en serio, sin saltársela ni una vez.",
+      "script": "Elegid un juego que ya conozcáis, como el pillapilla. Inventad una regla nueva y divertida, como saltar a la pata coja todo el rato. Jugad un ratito así.",
       "steps": [
-        "Elegid un juego clásico que todos conozcáis.",
-        "Inventad una regla nueva que no haya existido nunca.",
-        "Jugad una ronda corta aplicándola, por rara que sea."
+        "Elegid un juego que ya conozcáis.",
+        "Inventad una regla nueva y divertida.",
+        "Jugad un ratito con esa regla."
+      ],
+      "ages": "desde 4 años",
+      "tags": [
+        "peques"
       ]
     },
     {
       "id": "crea-objeto-magico",
       "theme": "creatividad",
-      "title": "Objeto mágico",
-      "duration": 10,
-      "script": "Escoge un objeto que tengas delante y decide qué poder mágico esconde. Cuenta qué ocurre si alguien lo usa tres veces seguidas. Y para terminar, imagina un problema pequeño que ese poder acabaría provocando, y cómo lo arreglarías tú.",
+      "title": "El objeto mágico",
+      "duration": 4,
+      "script": "Elige un juguete y decide qué poder mágico tiene. Puede hacer llover caramelos o volar por el aire. Usa el poder ahora mismo, jugando con él.",
       "steps": [
-        "Escoge un objeto y decide qué poder mágico tiene.",
-        "Explica qué pasa si alguien lo usa tres veces seguidas.",
-        "Imagina el problema que causaría y cómo lo resolverías."
+        "Elige un juguete y decide su poder mágico.",
+        "Cuenta qué poder tiene.",
+        "Usa el poder jugando con él ahora."
+      ],
+      "players": "1 a 3 jugadores",
+      "ages": "desde 4 años",
+      "tags": [
+        "peques"
       ]
     },
     {
       "id": "grat-tres-cosas-que-ya-estan",
       "theme": "gratitud",
-      "title": "Tres cosas que ya están",
-      "duration": 8,
-      "script": "Mira a tu alrededor y busca tres cosas que ya tienes y que hoy te están ayudando. Nómbralas en voz alta y di por qué te facilitan la vida, aunque sea en algo mínimo. Después cierra los ojos un momento e imagina cómo habría sido el día sin una de ellas.",
+      "title": "Ya lo tengo",
+      "duration": 4,
+      "script": "Mira a tu alrededor y elige algo que ya tienes y te gusta mucho. Cógelo con las manos y di: qué bien que ya lo tengo.",
       "steps": [
-        "Busca tres cosas que ya tienes y que hoy te ayudan.",
-        "Nómbralas en voz alta y di por qué te facilitan la vida.",
-        "Cierra los ojos e imagina el día sin una de ellas."
+        "Elige algo que ya tienes y te gusta.",
+        "Cógelo con las manos.",
+        "Di: qué bien que ya lo tengo."
+      ],
+      "players": "1 a 3 jugadores",
+      "ages": "desde 4 años",
+      "tags": [
+        "peques"
       ]
     },
     {
       "id": "grat-aplauso-al-dia",
       "theme": "gratitud",
       "title": "Aplauso al día",
-      "duration": 8,
-      "players": "2 jugadores o más",
-      "script": "Cada uno elige un momento agradable que ya haya pasado hoy, por pequeño que sea. Lo cuenta en una sola frase, sin adornos. Y en cuanto termina, todos dan un aplauso rápido, como si ese momento acabara de ganar un premio.",
+      "duration": 4,
+      "players": "2 a 3 jugadores",
+      "script": "Cada uno cuenta un momento bonito de hoy, aunque sea pequeño. Después de cada uno, todos dan un aplauso, como si fuera un premio.",
       "steps": [
-        "Cada uno elige un momento bueno de hoy, por pequeño que sea.",
-        "Lo cuenta en una frase corta.",
-        "Todos aplauden rápido por cada momento compartido."
+        "Cada uno piensa un momento bonito de hoy.",
+        "Cuéntalo a los demás.",
+        "Todos dan un aplauso después."
+      ],
+      "ages": "desde 4 años",
+      "tags": [
+        "peques"
       ]
     },
     {
       "id": "grat-gracias-ocultas",
       "theme": "gratitud",
-      "title": "Gracias ocultas",
-      "duration": 10,
-      "script": "Piensa en alguien que no está aquí pero que te ha ayudado de alguna forma. Di en voz alta qué hizo exactamente y por qué fue importante para ti. Después imagina que lo tienes delante y dile la frase de agradecimiento que le dirías, en voz alta, ahora mismo.",
+      "title": "Un beso para el abuelo",
+      "duration": 4,
+      "script": "Piensa en alguien que quieres mucho y que ahora no está aquí, como el abuelo o una amiga. Manda un beso hacia donde esté. Cuando lo veas, dile gracias por algo bonito que hizo.",
       "steps": [
-        "Piensa en alguien que no está y que te ayudó.",
-        "Di en voz alta qué hizo y por qué fue importante.",
-        "Dile ahora la frase que le dirías si estuviera aquí."
+        "Piensa en alguien que quieres y no está aquí.",
+        "Manda un beso hacia donde esté.",
+        "Cuando lo veas, dile gracias."
+      ],
+      "players": "1 a 3 jugadores",
+      "ages": "desde 4 años",
+      "tags": [
+        "peques"
       ]
     },
     {
       "id": "grat-tesoro-del-lugar",
       "theme": "gratitud",
-      "title": "Tesoro del lugar",
-      "duration": 10,
-      "players": "2 jugadores o más",
-      "script": "Mirad el sitio donde estáis y buscad algo que se dé siempre por hecho: la luz, una silla, una ventana. Que cada uno explique por qué eso es un tesoro hoy, aunque al principio suene raro. Luego elegid entre todos el tesoro del día y celebradlo con un gesto.",
+      "title": "El tesoro escondido",
+      "duration": 5,
+      "players": "2 a 3 jugadores",
+      "script": "Buscad juntos algo de la habitación que casi nunca miráis, como un interruptor o una ventana. Decidid que ese es el tesoro del día. Dadle las gracias con un aplauso.",
       "steps": [
-        "Buscad algo del lugar que deis siempre por hecho.",
-        "Explicad por qué eso es un tesoro hoy.",
-        "Elegid entre todos el tesoro del día y celebradlo."
+        "Buscad algo que casi nunca miráis.",
+        "Decidid que ese es el tesoro del día.",
+        "Dadle las gracias con un aplauso."
+      ],
+      "ages": "desde 4 años",
+      "tags": [
+        "peques"
       ]
     },
     {
       "id": "grat-cadena-de-cumplidos",
       "theme": "gratitud",
-      "title": "Cadena de cumplidos",
-      "duration": 10,
-      "players": "3 jugadores o más",
-      "script": "Uno empieza: mira a otra persona y le dice un cumplido sincero sobre algo que ya tiene o que ya hace. Quien lo recibe se lo pasa a alguien distinto, pero con otras palabras, sin repetir la frase anterior. La cadena sigue hasta que todos hayan recibido al menos uno.",
+      "title": "La cadena de piropos",
+      "duration": 5,
+      "players": "2 a 3 jugadores",
+      "script": "Mira a alguien y dile algo bonito, como me gusta tu sonrisa. Esa persona se lo dice a otra, con otras palabras. Seguid la cadena hasta que todos hayáis recibido uno.",
       "steps": [
-        "Alguien dice a otra persona un cumplido sincero.",
-        "Quien lo recibe se lo dice a otra, sin repetir la frase.",
-        "Seguid hasta que todos hayan recibido uno."
+        "Dile a alguien algo bonito de él o ella.",
+        "Esa persona se lo dice a otra distinta.",
+        "Seguid hasta que todos recibáis un piropo."
+      ],
+      "ages": "desde 4 años",
+      "tags": [
+        "peques"
       ]
     },
     {
       "id": "viaje-billete-imaginario",
       "theme": "viaje",
-      "title": "Billete imaginario",
-      "duration": 12,
-      "script": "Elige un lugar del mundo al que te gustaría viajar y ve allí sin levantarte del sitio. Describe lo que ves nada más llegar: los colores, los olores, los sonidos, la gente que pasa. Y cuenta qué harías en los primeros cinco minutos de estar allí.",
+      "title": "Un viaje a...",
+      "duration": 4,
+      "script": "Elige un sitio al que te gustaría ir: la playa, la montaña o la selva. Haz una cosa que harías allí, como nadar o trepar. Cuenta qué has hecho en tu viaje.",
       "steps": [
-        "Elige un lugar del mundo al que te gustaría viajar.",
-        "Describe lo que ves al llegar: colores, olores, sonidos, gente.",
-        "Cuenta qué harías en los primeros cinco minutos."
+        "Elige un sitio al que te gustaría ir.",
+        "Haz algo que harías allí.",
+        "Cuenta qué has hecho en tu viaje."
+      ],
+      "players": "1 a 3 jugadores",
+      "ages": "desde 4 años",
+      "tags": [
+        "peques"
       ]
     },
     {
       "id": "viaje-ascensor-fantastico",
       "theme": "viaje",
-      "title": "Ascensor fantástico",
-      "duration": 12,
-      "script": "Imagina que entras en un ascensor capaz de llevarte a cualquier mundo inventado. Di en voz alta a qué mundo vas y qué aparece cuando se abren las puertas. Vive allí una aventura corta y vuelve al ascensor para regresar al sitio donde estás de verdad.",
+      "title": "El ascensor mágico",
+      "duration": 5,
+      "script": "Aprieta un botón imaginario en la pared. Cuenta hacia atrás: tres, dos, uno. Abre las puertas con los brazos: has llegado a un mundo nuevo. ¿Qué ves? Haz una cosa allí.",
       "steps": [
-        "Entra en un ascensor que lleva a mundos inventados.",
-        "Di a qué mundo vas y qué ves al abrirse las puertas.",
-        "Cuenta una aventura breve antes de volver."
+        "Aprieta un botón imaginario.",
+        "Cuenta tres, dos, uno.",
+        "Abre las puertas y haz algo en el mundo nuevo."
+      ],
+      "players": "1 a 3 jugadores",
+      "ages": "desde 4 años",
+      "tags": [
+        "peques"
       ]
     },
     {
       "id": "viaje-mapa-en-la-mesa",
       "theme": "viaje",
-      "title": "Mapa en la mesa",
-      "duration": 12,
-      "script": "Mira la mesa o el suelo y decide que a partir de ahora son un mapa gigante. Ve señalando países con el dedo y ponles nombres inventados según se te ocurran. Elige uno y cuenta cómo son sus habitantes y qué costumbre rarísima tienen.",
+      "title": "Mapa en el suelo",
+      "duration": 5,
+      "script": "Vamos a imaginar que el suelo es un mapa gigante. Señala un sitio con el dedo y ponle un nombre. Camina con los dedos hasta otro sitio y ponle otro nombre.",
       "steps": [
-        "Decide que la mesa o el suelo son un mapa gigante.",
-        "Señala países con el dedo y ponles nombres inventados.",
-        "Elige uno y cuenta cómo son sus habitantes y su costumbre más rara."
+        "Señala un sitio del suelo y ponle nombre.",
+        "Camina con los dedos hasta otro sitio.",
+        "Ponle nombre a ese segundo lugar."
+      ],
+      "players": "1 a 3 jugadores",
+      "ages": "desde 4 años",
+      "tags": [
+        "peques"
       ]
     },
     {
       "id": "viaje-en-el-tiempo",
       "theme": "viaje",
-      "title": "Viaje en el tiempo",
-      "duration": 12,
-      "script": "Decide si hoy viajas al pasado o al futuro, sin moverte de donde estás. Di en qué año has aterrizado y qué ves a tu alrededor al llegar. Antes de volver al presente, cuenta una cosa que harías allí y que aquí no podrías hacer.",
+      "title": "Dinosaurios o robots",
+      "duration": 5,
+      "script": "Elige: ¿quieres ir con los dinosaurios de hace mucho tiempo o con los robots del futuro? Camina y haz ruidos como ellos. Cuenta una cosa que has visto en ese viaje.",
       "steps": [
-        "Decide si viajas al pasado o al futuro.",
-        "Di en qué año estás y qué ves al llegar.",
-        "Cuenta una cosa que harías antes de regresar."
+        "Elige entre dinosaurios o robots.",
+        "Camina y haz sus ruidos.",
+        "Cuenta una cosa que viste en ese viaje."
+      ],
+      "players": "1 a 3 jugadores",
+      "ages": "desde 4 años",
+      "tags": [
+        "peques"
       ]
     },
     {
       "id": "viaje-souvenir-invisible",
       "theme": "viaje",
-      "title": "Souvenir invisible",
-      "duration": 10,
-      "script": "Imagina que acabas de volver de un viaje fantástico que solo ha ocurrido en tu cabeza. Traes contigo un souvenir invisible: puede ser un olor, una palabra, una canción. Descríbelo en voz alta y cuenta cómo hará que te acuerdes siempre de ese viaje.",
+      "title": "Mi recuerdo de mentira",
+      "duration": 4,
+      "script": "Después de un viaje imaginario, vuelves con un recuerdo invisible en la mano, como una piedra brillante o una flor. Enséñaselo a alguien y cuenta de dónde lo trajiste.",
       "steps": [
-        "Vuelve de un viaje fantástico que solo ocurrió en tu cabeza.",
-        "Elige el souvenir invisible que traes: un olor, una palabra, una canción.",
-        "Descríbelo en voz alta y di cómo te recordará ese viaje."
+        "Cierra la mano como si tuvieras un recuerdo invisible.",
+        "Decide qué es y de dónde lo trajiste.",
+        "Enséñaselo a alguien y cuéntaselo."
+      ],
+      "players": "1 a 3 jugadores",
+      "ages": "desde 4 años",
+      "tags": [
+        "peques"
       ]
     },
     {
@@ -1063,6 +1347,379 @@
         "Brazos en cruz y despegad con la canción.",
         "Volad por la habitación esquivando los muebles.",
         "Al oír aterrizar, posaos en el suelo sin ruido."
+      ]
+    },
+    {
+      "id": "conc-sigue-el-ritmo",
+      "theme": "concentracion",
+      "title": "Sigue el ritmo",
+      "duration": 4,
+      "players": "2 a 3 jugadores",
+      "script": "Alguien da unas palmadas con un ritmo sencillo, como palma, palma, pausa. La otra persona repite el mismo ritmo. Si sale bien, se añade una palmada más.",
+      "steps": [
+        "Alguien da un ritmo sencillo con palmas.",
+        "La otra persona lo repite igual.",
+        "Si sale bien, añadid una palmada más."
+      ],
+      "ages": "desde 4 años",
+      "tags": [
+        "peques"
+      ]
+    },
+    {
+      "id": "conc-el-globo-que-no-cae",
+      "theme": "concentracion",
+      "title": "El globo que no cae",
+      "duration": 5,
+      "players": "1 a 3 jugadores",
+      "materials": [
+        "un globo o una pelota blandita"
+      ],
+      "script": "Con un globo o una pelota blandita, dale golpecitos suaves hacia arriba con las manos. El reto es que no toque el suelo. Cuenta en voz alta cada golpecito que consigas.",
+      "steps": [
+        "Coge un globo o una pelota blandita.",
+        "Dale golpecitos suaves hacia arriba sin que caiga.",
+        "Cuenta en voz alta cuántos consigues."
+      ],
+      "ages": "desde 4 años",
+      "tags": [
+        "peques"
+      ]
+    },
+    {
+      "id": "conc-la-estatua-de-hielo",
+      "theme": "concentracion",
+      "title": "La estatua de hielo",
+      "duration": 5,
+      "players": "1 a 3 jugadores",
+      "materials": [
+        "una canción"
+      ],
+      "script": "Baila con la música. Cuando alguien diga hielo, te quedas congelado como una estatua. Cuando diga sol, te derrites muy despacio hasta el suelo. Y vuelta a bailar.",
+      "steps": [
+        "Baila mientras suena la música.",
+        "Al oír hielo, quédate congelado.",
+        "Al oír sol, derrítete despacio hasta el suelo."
+      ],
+      "ages": "desde 4 años",
+      "tags": [
+        "peques"
+      ]
+    },
+    {
+      "id": "conc-encuentra-el-color",
+      "theme": "concentracion",
+      "title": "Encuentra el color",
+      "duration": 4,
+      "players": "1 a 3 jugadores",
+      "script": "Alguien dice un color en voz alta, por ejemplo azul. Corre a tocar algo de ese color lo más rápido que puedas. Luego prueba con otro color distinto.",
+      "steps": [
+        "Alguien dice un color en voz alta.",
+        "Corre a tocar algo de ese color.",
+        "Repite el juego con otro color."
+      ],
+      "ages": "desde 4 años",
+      "tags": [
+        "peques"
+      ]
+    },
+    {
+      "id": "conc-caja-misteriosa",
+      "theme": "concentracion",
+      "title": "La caja misteriosa",
+      "duration": 5,
+      "players": "1 a 3 jugadores",
+      "materials": [
+        "una caja o bolsa",
+        "un juguete pequeño"
+      ],
+      "script": "Mete un juguete pequeño dentro de una caja o bolsa sin que lo veas. Mete la mano y tócalo sin mirar. Intenta adivinar qué es solo tocándolo. Después, míralo para comprobarlo.",
+      "steps": [
+        "Mete un juguete en una caja o bolsa sin mirar.",
+        "Mete la mano y tócalo sin mirar.",
+        "Mira dentro para comprobar si acertaste."
+      ],
+      "ages": "desde 4 años",
+      "tags": [
+        "peques"
+      ]
+    },
+    {
+      "id": "crea-el-desfile-de-animales",
+      "theme": "creatividad",
+      "title": "El desfile de animales",
+      "duration": 5,
+      "players": "1 a 3 jugadores",
+      "script": "Camina como un elefante, pisando fuerte y despacio. Ahora salta como una rana. Ahora arrástrate como una serpiente. Elige tu animal favorito de los tres y hazlo otra vez.",
+      "steps": [
+        "Camina como un elefante.",
+        "Salta como una rana y arrástrate como una serpiente.",
+        "Elige tu favorito y repítelo."
+      ],
+      "ages": "desde 4 años",
+      "tags": [
+        "peques"
+      ]
+    },
+    {
+      "id": "crea-torres-locas",
+      "theme": "creatividad",
+      "title": "Torres locas",
+      "duration": 6,
+      "players": "1 a 3 jugadores",
+      "materials": [
+        "bloques, cojines o cajas"
+      ],
+      "script": "Con bloques, cojines o cajas, construye la torre más alta o más rara que puedas. Cuando esté lista, ponle un nombre gracioso. Si se cae, no pasa nada: se vuelve a construir.",
+      "steps": [
+        "Construye una torre con lo que tengas a mano.",
+        "Ponle un nombre gracioso a tu torre.",
+        "Si se cae, vuelve a construirla."
+      ],
+      "ages": "desde 4 años",
+      "tags": [
+        "peques"
+      ]
+    },
+    {
+      "id": "crea-dibujo-a-ciegas",
+      "theme": "creatividad",
+      "title": "Dibujo a ciegas",
+      "duration": 4,
+      "players": "1 a 3 jugadores",
+      "materials": [
+        "papel",
+        "algo para pintar"
+      ],
+      "script": "Cierra los ojos y dibuja un sol o una casa sin mirar el papel. Cuando termines, abre los ojos y mira qué ha salido. Seguro que os reís un poco.",
+      "steps": [
+        "Cierra los ojos y decide qué vas a dibujar.",
+        "Dibújalo sin mirar el papel.",
+        "Abre los ojos y mira el resultado."
+      ],
+      "ages": "desde 4 años",
+      "tags": [
+        "peques"
+      ]
+    },
+    {
+      "id": "crea-disfraz-expres",
+      "theme": "creatividad",
+      "title": "El disfraz exprés",
+      "duration": 5,
+      "players": "1 a 3 jugadores",
+      "materials": [
+        "una tela, pañuelo o gorro"
+      ],
+      "script": "Con una tela, un pañuelo o un gorro, conviértete en un personaje: pirata, princesa o superhéroe, el que tú quieras. Camina como él y di una frase que diría.",
+      "steps": [
+        "Ponte una tela, pañuelo o gorro.",
+        "Elige qué personaje eres.",
+        "Camina como él y di una frase suya."
+      ],
+      "ages": "desde 4 años",
+      "tags": [
+        "peques"
+      ]
+    },
+    {
+      "id": "crea-orquesta-de-cocina",
+      "theme": "creatividad",
+      "title": "La orquesta de la cocina",
+      "duration": 5,
+      "players": "1 a 3 jugadores",
+      "materials": [
+        "ollas, cucharas o tápers"
+      ],
+      "script": "Busca una olla, una cuchara o un táper y golpéalo suavemente para hacer música. Inventa una canción cortita golpeando distintas cosas. Termina con un golpe fuerte y una reverencia.",
+      "steps": [
+        "Busca ollas, cucharas o tápers.",
+        "Golpéalos suavemente e inventa una canción.",
+        "Termina con un golpe fuerte y una reverencia."
+      ],
+      "ages": "desde 4 años",
+      "tags": [
+        "peques"
+      ]
+    },
+    {
+      "id": "grat-el-abrazo-de-las-gracias",
+      "theme": "gratitud",
+      "title": "El abrazo de las gracias",
+      "duration": 4,
+      "players": "1 a 3 jugadores",
+      "script": "Piensa en alguien que está cerca de ti ahora mismo. Ve y dale un abrazo bien fuerte. Dile gracias por estar contigo hoy.",
+      "steps": [
+        "Piensa en alguien que está cerca ahora.",
+        "Dale un abrazo bien fuerte.",
+        "Dile gracias por estar contigo."
+      ],
+      "ages": "desde 4 años",
+      "tags": [
+        "peques"
+      ]
+    },
+    {
+      "id": "grat-ronda-de-besitos",
+      "theme": "gratitud",
+      "title": "La ronda de los besitos",
+      "duration": 4,
+      "players": "2 a 3 jugadores",
+      "script": "Sentaos en corro. El primero da un besito o un abrazo a la persona de al lado y le dice gracias por algo pequeño de hoy. Esa persona hace lo mismo con la siguiente.",
+      "steps": [
+        "Sentaos en corro.",
+        "El primero da un beso o abrazo y dice gracias por algo.",
+        "Seguid la ronda hasta el final."
+      ],
+      "ages": "desde 4 años",
+      "tags": [
+        "peques"
+      ]
+    },
+    {
+      "id": "grat-mi-cosa-favorita-de-hoy",
+      "theme": "gratitud",
+      "title": "Mi cosa favorita de hoy",
+      "duration": 4,
+      "players": "1 a 3 jugadores",
+      "script": "Piensa en la cosa que más te ha gustado hoy, como un juego o una fruta. Enséñasela a alguien o señálala. Di gracias por haberla tenido.",
+      "steps": [
+        "Piensa en lo que más te ha gustado hoy.",
+        "Enséñaselo a alguien o señálalo.",
+        "Di gracias por haberlo tenido."
+      ],
+      "ages": "desde 4 años",
+      "tags": [
+        "peques"
+      ]
+    },
+    {
+      "id": "grat-el-sol-agradecido",
+      "theme": "gratitud",
+      "title": "El sol agradecido",
+      "duration": 6,
+      "players": "1 a 3 jugadores",
+      "materials": [
+        "papel",
+        "algo para pintar"
+      ],
+      "script": "Dibuja un sol redondo en el papel. Por cada rayo que le pongas, di una cosa pequeña que te hace feliz hoy. Cuantos más rayos, más brilla tu sol.",
+      "steps": [
+        "Dibuja un sol redondo.",
+        "Por cada rayo, di algo que te hace feliz.",
+        "Sigue hasta llenar el sol de rayos."
+      ],
+      "ages": "desde 4 años",
+      "tags": [
+        "peques"
+      ]
+    },
+    {
+      "id": "grat-gracias-a-la-naturaleza",
+      "theme": "gratitud",
+      "title": "Gracias a la naturaleza",
+      "duration": 4,
+      "players": "1 a 3 jugadores",
+      "script": "Ve a una ventana y mira fuera. Busca algo bonito, como el sol, un árbol o el cielo. Di gracias en voz alta por ese trocito de naturaleza.",
+      "steps": [
+        "Ve a una ventana y mira fuera.",
+        "Busca algo bonito de la naturaleza.",
+        "Di gracias en voz alta."
+      ],
+      "ages": "desde 4 años",
+      "tags": [
+        "peques"
+      ]
+    },
+    {
+      "id": "viaje-el-cohete-a-la-luna",
+      "theme": "viaje",
+      "title": "El cohete a la luna",
+      "duration": 5,
+      "players": "1 a 3 jugadores",
+      "materials": [
+        "un cojín"
+      ],
+      "script": "Agáchate como un cohete a punto de despegar. Cuenta hacia atrás: tres, dos, uno... ¡despegue! Salta bien alto. Aterriza suave sobre un cojín, que es la luna.",
+      "steps": [
+        "Agáchate como un cohete listo para despegar.",
+        "Cuenta tres, dos, uno y salta.",
+        "Aterriza suave sobre un cojín."
+      ],
+      "ages": "desde 4 años",
+      "tags": [
+        "peques"
+      ]
+    },
+    {
+      "id": "viaje-la-selva-de-los-monos",
+      "theme": "viaje",
+      "title": "La selva de los monos",
+      "duration": 5,
+      "players": "1 a 3 jugadores",
+      "script": "Vamos a movernos por la selva como monos. Balancea los brazos y da saltitos, haciendo el sonido de un mono. Busca un plátano imaginario colgado muy alto.",
+      "steps": [
+        "Balancea los brazos como un mono.",
+        "Da saltitos haciendo su sonido.",
+        "Busca un plátano imaginario muy alto."
+      ],
+      "ages": "desde 4 años",
+      "tags": [
+        "peques"
+      ]
+    },
+    {
+      "id": "viaje-el-barco-pirata",
+      "theme": "viaje",
+      "title": "El barco pirata",
+      "duration": 6,
+      "players": "1 a 3 jugadores",
+      "materials": [
+        "un sofá o cojines"
+      ],
+      "script": "El sofá es tu barco pirata. Sube a bordo y rema fuerte con los brazos. Mira por un catalejo hecho con la mano. Cuando veas tierra, grita: tierra a la vista.",
+      "steps": [
+        "Súbete al sofá, que es tu barco.",
+        "Rema fuerte con los brazos.",
+        "Mira por el catalejo y grita: tierra a la vista."
+      ],
+      "ages": "desde 4 años",
+      "tags": [
+        "peques"
+      ]
+    },
+    {
+      "id": "viaje-el-circo-magico",
+      "theme": "viaje",
+      "title": "El circo mágico",
+      "duration": 5,
+      "players": "1 a 3 jugadores",
+      "script": "Camina por una línea del suelo como si fuera la cuerda floja de un circo, con los brazos abiertos para no caerte. Ahora haz como si hicieras malabares con pelotas. Al terminar, haz una reverencia.",
+      "steps": [
+        "Camina por una línea con los brazos abiertos.",
+        "Haz como si hicieras malabares.",
+        "Termina con una reverencia."
+      ],
+      "ages": "desde 4 años",
+      "tags": [
+        "peques"
+      ]
+    },
+    {
+      "id": "viaje-la-granja-de-los-sonidos",
+      "theme": "viaje",
+      "title": "La granja de los sonidos",
+      "duration": 5,
+      "players": "1 a 3 jugadores",
+      "script": "Vamos a visitar una granja. Cuando digan vaca, haz su sonido y camina despacio y pesado. Cuando digan gallina, haz su sonido y da pasitos rápidos. Cuando digan caballo, galopa por la habitación.",
+      "steps": [
+        "Al oír vaca, haz su sonido y anda despacio.",
+        "Al oír gallina, haz su sonido y da pasitos rápidos.",
+        "Al oír caballo, galopa por la habitación."
+      ],
+      "ages": "desde 4 años",
+      "tags": [
+        "peques"
       ]
     }
   ]

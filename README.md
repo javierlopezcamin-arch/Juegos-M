@@ -4,6 +4,11 @@ App-web para el móvil inspirada en el Totem de Morphée: eliges un tema, pulsas
 y sale un juego al azar. Puedes escucharlo con tu propia voz grabada o con la del móvil,
 cronometrarlo y guardarlo en favoritos.
 
+Todo el catálogo, 92 juegos en cuatro temas, está pensado para un niño de 4 años: sesiones
+de 4 a 6 minutos, instrucciones concretas de un solo paso, más cuerpo que palabra y una
+pegatina de premio al terminar. Se puede jugar solo con la voz o con las manos, con papel
+y pintura, con canciones, con juguetes escondidos o sin nada de material.
+
 El tótem suena al girar, al revelar el juego y al acabarse el tiempo. Los sonidos se
 sintetizan en el propio navegador, así que no pesan nada, y se apagan desde Ajustes.
 
@@ -41,9 +46,9 @@ Basta con pegar un bloque nuevo al final del array `games`:
 | `script` | no | El texto que se lee en voz alta, escrito para el oído. Si falta, se leen los pasos. |
 | `audio` | no | Ruta a un MP3 con tu locución, por ejemplo `data/audio/mi-juego.mp3`. |
 | `players` | no | Cuánta gente hace falta, por ejemplo `"1 a 3 jugadores"`. Sale junto a la duración. |
-| `ages` | no | Edad recomendada, por ejemplo `"desde 4 años"`. Sale al pie de la ficha. |
-| `materials` | no | Lista de lo que hay que tener a mano; la ficha la muestra como "Necesitas: …". |
-| `tags` | no | Etiquetas libres. Los juegos para niños pequeños llevan `"peques"`. |
+| `ages` | no | Edad recomendada. Todo el catálogo lleva `"desde 4 años"`. Sale al pie de la ficha. |
+| `materials` | no | Lista de lo que hay que tener a mano; la ficha la muestra como "Necesitas: …". Si el juego no necesita nada, se omite. |
+| `tags` | no | Etiquetas libres. Todo el catálogo lleva `"peques"`, lista para cuando haya un filtro por edad. |
 
 Los temas se definen arriba del mismo fichero, en `themes`, con `id`, `name`, `color` y `subtitle`.
 Añadir un tema nuevo es igual de sencillo.
