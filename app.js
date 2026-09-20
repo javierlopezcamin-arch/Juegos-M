@@ -463,7 +463,7 @@
 
     note: function (freq, at, dur, type, gain, slideTo) {
       var ctx = this.ctx;
-      var t0 = ctx.currentTime + at;
+      var t0 = ctx.currentTime + 0.02 + at;   // margen para no programar sobre el instante actual
       var osc = ctx.createOscillator();
       var amp = ctx.createGain();
       osc.type = type || 'triangle';
@@ -480,7 +480,17 @@
 
     play: function (name) {
       if (!state.settings.sounds || this.muted) return;
-      if (!this.unlock()) return;
+      var ctx = this.unlock();
+      if (!ctx) return;
+      var self = this;
+      if (ctx.state !== 'running' && ctx.resume) {
+        ctx.resume().then(function () { self.render(name); }).catch(function () {});
+        return;
+      }
+      this.render(name);
+    },
+
+    render: function (name) {
       var i;
       switch (name) {
         case 'tap':
@@ -826,6 +836,11 @@
       $('btn-fav').setAttribute('aria-pressed', now ? 'true' : 'false');
       sound.play(now ? 'fav' : 'unfav');
       toast(now ? 'Guardado en favoritos' : 'Quitado de favoritos');
+    });
+
+    $('btn-test-sound').addEventListener('click', function () {
+      if (!state.settings.sounds) { toast('Enciende los sonidos para probarlos'); return; }
+      sound.play('done');
     });
 
     $('set-sounds').addEventListener('change', function (e) {
