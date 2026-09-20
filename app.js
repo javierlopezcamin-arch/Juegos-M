@@ -3,6 +3,7 @@
 (function () {
   'use strict';
 
+  var APP_VERSION = '3';
   var CATALOG_URL = 'data/games.json';
   var DEFAULT_DURATION = 10;
   var HISTORY_MAX = 20;
@@ -880,7 +881,7 @@
 
     var total = Object.keys(state.byId).length;
     $('catalog-info').textContent = total + ' juegos en ' + state.themes.length +
-      ' temas. Para añadir más, edita data/games.json.';
+      ' temas, versión ' + APP_VERSION + '. Para añadir más, edita data/games.json.';
   }
 
   function enumerate(items) {

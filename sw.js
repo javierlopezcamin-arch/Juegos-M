@@ -1,8 +1,10 @@
 /* Tótem — service worker.
-   Todo se sirve desde caché para que la app abra sin cobertura y se revalida
-   en segundo plano: los juegos nuevos y cualquier cambio entran al recargar. */
+   La app se pide primero a la red, con un límite de espera corto: así una versión
+   nueva entra en la primera recarga. Si la red falla o tarda, se sirve lo guardado,
+   de modo que sigue abriendo sin cobertura. */
 
-var VERSION = 'totem-v1';
+var VERSION = 'totem-v3';
+var NETWORK_TIMEOUT = 3500;
 var SHELL = [
   './',
   'index.html',
@@ -32,19 +34,50 @@ self.addEventListener('activate', function (event) {
   );
 });
 
-function staleWhileRevalidate(request) {
-  return caches.open(VERSION).then(function (cache) {
-    return cache.match(request).then(function (cached) {
-      var network = fetch(request).then(function (response) {
-        if (response && response.ok) cache.put(request, response.clone());
-        return response;
-      }).catch(function () {
-        if (cached) return cached;
-        if (request.mode === 'navigate') return caches.match('index.html');
-        return new Response('', { status: 504, statusText: 'Sin conexión' });
-      });
-      return cached || network;
+function keep(request, response) {
+  if (response && response.ok) {
+    var copy = response.clone();
+    caches.open(VERSION).then(function (cache) { cache.put(request, copy); });
+  }
+  return response;
+}
+
+function fromCache(request) {
+  return caches.match(request).then(function (cached) {
+    if (cached) return cached;
+    if (request.mode === 'navigate') return caches.match('index.html');
+    return new Response('', { status: 504, statusText: 'Sin conexión' });
+  });
+}
+
+function networkFirst(request) {
+  return new Promise(function (resolve) {
+    var done = false;
+    var finish = function (response) {
+      if (done) return;
+      done = true;
+      resolve(response);
+    };
+    var timer = setTimeout(function () { finish(fromCache(request)); }, NETWORK_TIMEOUT);
+
+    fetch(request).then(function (response) {
+      clearTimeout(timer);
+      keep(request, response);
+      finish(response);
+    }).catch(function () {
+      clearTimeout(timer);
+      finish(fromCache(request));
     });
+  });
+}
+
+/* Las locuciones no cambian nunca y pesan: esas sí desde la caché. */
+function cacheFirst(request) {
+  return caches.match(request).then(function (cached) {
+    if (cached) return cached;
+    return fetch(request).then(function (response) {
+      return keep(request, response);
+    }).catch(function () { return fromCache(request); });
   });
 }
 
@@ -55,5 +88,9 @@ self.addEventListener('fetch', function (event) {
   var url = new URL(request.url);
   if (url.origin !== self.location.origin) return;
 
-  event.respondWith(staleWhileRevalidate(request));
+  if (url.pathname.indexOf('/data/audio/') !== -1) {
+    event.respondWith(cacheFirst(request));
+    return;
+  }
+  event.respondWith(networkFirst(request));
 });
