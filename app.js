@@ -137,7 +137,9 @@
         script: g.script || g.steps.join(' '),
         audio: g.audio || null,
         players: g.players || '',
-        materials: g.materials || []
+        ages: g.ages || '',
+        materials: g.materials || [],
+        tags: g.tags || []
       };
     });
     return { themes: themes, games: games };
@@ -653,6 +655,12 @@
     meta.push(game.duration + ' min');
     if (game.players) meta.push(game.players);
     $('card-meta').textContent = meta.join(' · ');
+
+    var needs = [];
+    if (game.ages) needs.push(game.ages.charAt(0).toUpperCase() + game.ages.slice(1));
+    if (game.materials && game.materials.length) needs.push('Necesitas: ' + enumerate(game.materials));
+    $('card-needs').textContent = needs.join(' · ');
+    $('card-needs').hidden = !needs.length;
     $('card-title').textContent = game.title;
 
     var steps = $('card-steps');
@@ -728,6 +736,11 @@
     var total = Object.keys(state.byId).length;
     $('catalog-info').textContent = total + ' juegos en ' + state.themes.length +
       ' temas. Para añadir más, edita data/games.json.';
+  }
+
+  function enumerate(items) {
+    if (items.length === 1) return items[0];
+    return items.slice(0, -1).join(', ') + ' y ' + items[items.length - 1];
   }
 
   function themeName(id) {

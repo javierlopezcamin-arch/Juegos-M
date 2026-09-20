@@ -40,8 +40,10 @@ Basta con pegar un bloque nuevo al final del array `games`:
 | `duration` | no | Minutos del temporizador. Por defecto, 10. |
 | `script` | no | El texto que se lee en voz alta, escrito para el oído. Si falta, se leen los pasos. |
 | `audio` | no | Ruta a un MP3 con tu locución, por ejemplo `data/audio/mi-juego.mp3`. |
-| `players` | no | Si el juego necesita compañía, por ejemplo `"2 o más"`. Aparece en la ficha. |
-| `ages`, `materials`, `tags` | no | Campos libres, reservados para más adelante. |
+| `players` | no | Cuánta gente hace falta, por ejemplo `"1 a 3 jugadores"`. Sale junto a la duración. |
+| `ages` | no | Edad recomendada, por ejemplo `"desde 4 años"`. Sale al pie de la ficha. |
+| `materials` | no | Lista de lo que hay que tener a mano; la ficha la muestra como "Necesitas: …". |
+| `tags` | no | Etiquetas libres. Los juegos para niños pequeños llevan `"peques"`. |
 
 Los temas se definen arriba del mismo fichero, en `themes`, con `id`, `name`, `color` y `subtitle`.
 Añadir un tema nuevo es igual de sencillo.

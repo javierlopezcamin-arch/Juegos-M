@@ -452,7 +452,7 @@
       "theme": "concentracion",
       "title": "Seguir al líder",
       "duration": 10,
-      "players": "2 o más",
+      "players": "2 jugadores o más",
       "script": "Una persona hace de líder y elige un movimiento sencillo, como levantar la mano o dar golpecitos en la mesa. Los demás lo copian exactamente al ritmo que marque, sin adelantarse ni quedarse atrás. Cada medio minuto cambia el líder y cambia el movimiento.",
       "steps": [
         "El líder elige un movimiento sencillo.",
@@ -501,7 +501,7 @@
       "theme": "creatividad",
       "title": "Superpoder del día",
       "duration": 10,
-      "players": "2 o más",
+      "players": "2 jugadores o más",
       "script": "Elige un superpoder que tengas solo por hoy, como entender a los animales o parar el tiempo diez segundos. Cuenta cómo lo usarías aquí mismo, en el sitio donde estás ahora. Luego pide a otra persona que proponga un uso más y añádelo a tu historia sin decir que no.",
       "steps": [
         "Elige un superpoder que tengas solo hoy.",
@@ -514,7 +514,7 @@
       "theme": "creatividad",
       "title": "Inventor de reglas",
       "duration": 12,
-      "players": "2 o más",
+      "players": "2 jugadores o más",
       "script": "Elegid entre todos un juego clásico: el pilla pilla, el escondite, Simón dice, el que queráis. Inventad una regla nueva que no haya existido nunca, aunque suene absurda. Y jugad una ronda corta aplicándola en serio, sin saltársela ni una vez.",
       "steps": [
         "Elegid un juego clásico que todos conozcáis.",
@@ -551,7 +551,7 @@
       "theme": "gratitud",
       "title": "Aplauso al día",
       "duration": 8,
-      "players": "2 o más",
+      "players": "2 jugadores o más",
       "script": "Cada uno elige un momento agradable que ya haya pasado hoy, por pequeño que sea. Lo cuenta en una sola frase, sin adornos. Y en cuanto termina, todos dan un aplauso rápido, como si ese momento acabara de ganar un premio.",
       "steps": [
         "Cada uno elige un momento bueno de hoy, por pequeño que sea.",
@@ -576,7 +576,7 @@
       "theme": "gratitud",
       "title": "Tesoro del lugar",
       "duration": 10,
-      "players": "2 o más",
+      "players": "2 jugadores o más",
       "script": "Mirad el sitio donde estáis y buscad algo que se dé siempre por hecho: la luz, una silla, una ventana. Que cada uno explique por qué eso es un tesoro hoy, aunque al principio suene raro. Luego elegid entre todos el tesoro del día y celebradlo con un gesto.",
       "steps": [
         "Buscad algo del lugar que deis siempre por hecho.",
@@ -589,7 +589,7 @@
       "theme": "gratitud",
       "title": "Cadena de cumplidos",
       "duration": 10,
-      "players": "3 o más",
+      "players": "3 jugadores o más",
       "script": "Uno empieza: mira a otra persona y le dice un cumplido sincero sobre algo que ya tiene o que ya hace. Quien lo recibe se lo pasa a alguien distinto, pero con otras palabras, sin repetir la frase anterior. La cadena sigue hasta que todos hayan recibido al menos uno.",
       "steps": [
         "Alguien dice a otra persona un cumplido sincero.",
@@ -655,6 +655,410 @@
         "Vuelve de un viaje fantástico que solo ocurrió en tu cabeza.",
         "Elige el souvenir invisible que traes: un olor, una palabra, una canción.",
         "Descríbelo en voz alta y di cómo te recordará ese viaje."
+      ]
+    },
+    {
+      "id": "conc-un-dedo-un-color",
+      "theme": "concentracion",
+      "title": "Un dedo, un color",
+      "duration": 5,
+      "players": "1 a 3 jugadores",
+      "ages": "desde 4 años",
+      "materials": [
+        "pinturas de dedos",
+        "papel"
+      ],
+      "tags": [
+        "peques"
+      ],
+      "script": "Moja un solo dedo en la pintura, el que tú quieras. Ahora vas a hacer puntitos en el papel, uno detrás de otro, todos en fila y del mismo tamaño. Cuenta en voz alta cada puntito que haces. Cuando llegues a diez, para y mira tu fila entera.",
+      "steps": [
+        "Moja un solo dedo en la pintura.",
+        "Haz diez puntitos en fila, contándolos en voz alta.",
+        "Para al llegar a diez y mira tu fila."
+      ]
+    },
+    {
+      "id": "conc-la-cancion-del-stop",
+      "theme": "concentracion",
+      "title": "La canción del stop",
+      "duration": 5,
+      "players": "2 a 3 jugadores",
+      "ages": "desde 4 años",
+      "materials": [
+        "una canción"
+      ],
+      "tags": [
+        "peques"
+      ],
+      "script": "Pon una canción que le guste y a bailar. Cuando la música pare de repente, todos se quedan quietos como estatuas, sin mover ni un dedo. Y cuando vuelva a sonar, a bailar otra vez. Prueba a parar la música cuando menos se lo espere.",
+      "steps": [
+        "Pon una canción y bailad juntos.",
+        "Al parar la música, todos quietos como estatuas.",
+        "Vuelve a ponerla y repite por sorpresa."
+      ]
+    },
+    {
+      "id": "conc-donde-esta-el-osito",
+      "theme": "concentracion",
+      "title": "Dónde está el osito",
+      "duration": 5,
+      "players": "2 a 3 jugadores",
+      "ages": "desde 4 años",
+      "materials": [
+        "un peluche o juguete"
+      ],
+      "tags": [
+        "peques"
+      ],
+      "script": "Que cierre los ojos y cuente hasta diez mientras escondes un juguete en la habitación, a la vista pero disimulado. Cuando los abra, que empiece a buscar. Tú solo le dices frío si se aleja y caliente si se acerca. Cuando lo encuentre, le toca esconderlo a él.",
+      "steps": [
+        "Esconde un juguete mientras el niño cuenta hasta diez.",
+        "Guíale solo diciendo frío o caliente.",
+        "Cuando lo encuentre, que lo esconda él."
+      ]
+    },
+    {
+      "id": "conc-pegatinas-en-la-raya",
+      "theme": "concentracion",
+      "title": "Pegatinas en la raya",
+      "duration": 5,
+      "players": "1 a 3 jugadores",
+      "ages": "desde 4 años",
+      "materials": [
+        "pegatinas",
+        "papel",
+        "un rotulador"
+      ],
+      "tags": [
+        "peques"
+      ],
+      "script": "Pinta una raya larga en el papel, recta o con curvas. Ahora pega pegatinas encima de la raya, una detrás de otra, intentando que ninguna se salga. Ve despacio, que esto no es una carrera. Cuando la raya esté llena, síguela con el dedo desde el principio.",
+      "steps": [
+        "Dibuja una raya larga en el papel.",
+        "Pega pegatinas encima sin salirse de la raya.",
+        "Recorre la raya con el dedo al terminar."
+      ]
+    },
+    {
+      "id": "conc-despacio-y-deprisa",
+      "theme": "concentracion",
+      "title": "Despacio y deprisa",
+      "duration": 4,
+      "players": "2 a 3 jugadores",
+      "ages": "desde 4 años",
+      "materials": [
+        "una canción que os sepáis"
+      ],
+      "tags": [
+        "peques"
+      ],
+      "script": "Elegid una canción que os sepáis los dos. Primero la cantáis muy muy despacio, alargando cada palabra como si fuerais tortugas. Después, la misma canción a toda velocidad, sin equivocaros. Y para acabar, tú marcas con palmadas si toca despacio o deprisa, y él te sigue.",
+      "steps": [
+        "Cantad una canción conocida muy despacio.",
+        "Cantadla otra vez a toda velocidad.",
+        "El adulto marca el ritmo con palmadas y el niño le sigue."
+      ]
+    },
+    {
+      "id": "crea-monstruo-de-pinturas",
+      "theme": "creatividad",
+      "title": "Monstruo de pinturas",
+      "duration": 6,
+      "players": "1 a 3 jugadores",
+      "ages": "desde 4 años",
+      "materials": [
+        "pinturas de dedos",
+        "papel grande"
+      ],
+      "tags": [
+        "peques"
+      ],
+      "script": "Vas a pintar un monstruo con las manos, sin mirar cómo lo hacen los demás. Puede tener los ojos que quiera, las patas que quiera y del color que quiera. Cuando esté terminado, ponle un nombre y dinos qué come para desayunar.",
+      "steps": [
+        "Pinta un monstruo con las manos.",
+        "Ponle nombre en voz alta.",
+        "Cuenta qué come para desayunar."
+      ]
+    },
+    {
+      "id": "crea-la-cancion-de-lo-que-hago",
+      "theme": "creatividad",
+      "title": "La canción de lo que hago",
+      "duration": 5,
+      "players": "1 a 3 jugadores",
+      "ages": "desde 4 años",
+      "tags": [
+        "peques"
+      ],
+      "script": "Vamos a cantar todo lo que estamos haciendo, como si fuéramos cantantes de verdad. Me levanto de la silla, cojo un cojín, miro por la ventana. Cualquier cosa vale, pero hay que cantarla, no decirla. Gana quien aguante más tiempo sin hablar normal.",
+      "steps": [
+        "Cantad en alto todo lo que vais haciendo.",
+        "No vale hablar normal, solo cantar.",
+        "Aguantad así todo lo que podáis."
+      ]
+    },
+    {
+      "id": "crea-pegatinas-con-patas",
+      "theme": "creatividad",
+      "title": "Pegatinas con patas",
+      "duration": 6,
+      "players": "1 a 3 jugadores",
+      "ages": "desde 4 años",
+      "materials": [
+        "pegatinas",
+        "papel",
+        "rotuladores"
+      ],
+      "tags": [
+        "peques"
+      ],
+      "script": "Pega una pegatina en medio del papel. Ahora conviértela en un bicho: dibújale patas, ojos, una boca, un sombrero si te apetece. Cuando esté listo, dinos cómo se llama y qué ruido hace cuando se enfada.",
+      "steps": [
+        "Pega una pegatina en medio del papel.",
+        "Dibújale patas, ojos y lo que se te ocurra.",
+        "Di cómo se llama y qué ruido hace."
+      ]
+    },
+    {
+      "id": "crea-el-juguete-que-habla",
+      "theme": "creatividad",
+      "title": "El juguete que habla",
+      "duration": 5,
+      "players": "2 a 3 jugadores",
+      "ages": "desde 4 años",
+      "materials": [
+        "dos o tres juguetes"
+      ],
+      "tags": [
+        "peques"
+      ],
+      "script": "Esconde un juguete detrás de tu espalda y hazle hablar con una voz rarísima, muy aguda o muy grave. El niño tiene que adivinar qué juguete es solo por la voz. Cuando acierte, le toca a él esconder otro y poner su propia voz.",
+      "steps": [
+        "Esconde un juguete detrás de la espalda.",
+        "Hazle hablar con una voz rara.",
+        "El niño adivina quién habla y luego le toca a él."
+      ]
+    },
+    {
+      "id": "crea-colores-mezclados",
+      "theme": "creatividad",
+      "title": "Colores mezclados",
+      "duration": 5,
+      "players": "1 a 3 jugadores",
+      "ages": "desde 4 años",
+      "materials": [
+        "pinturas",
+        "papel"
+      ],
+      "tags": [
+        "peques"
+      ],
+      "script": "Coge dos colores de pintura y mézclalos en el papel con el dedo. Mira bien el color nuevo que ha salido. Ahora hay que ponerle nombre, pero un nombre inventado: verde rana, marrón de charco, azul de noche. Prueba con otras dos pinturas y ponle nombre también.",
+      "steps": [
+        "Mezcla dos colores de pintura con el dedo.",
+        "Inventa un nombre para el color que sale.",
+        "Repite con otros dos colores."
+      ]
+    },
+    {
+      "id": "grat-la-pegatina-de-gracias",
+      "theme": "gratitud",
+      "title": "La pegatina de gracias",
+      "duration": 4,
+      "players": "2 a 3 jugadores",
+      "ages": "desde 4 años",
+      "materials": [
+        "pegatinas"
+      ],
+      "tags": [
+        "peques"
+      ],
+      "script": "Elige tu pegatina favorita de todas. Ahora piensa en alguien que hoy haya hecho algo bueno por ti, aunque sea pequeñito. Pégasela en la mano y dile en voz alta por qué se la das. Si esa persona no está, guárdala para cuando la veas.",
+      "steps": [
+        "Elige tu pegatina favorita.",
+        "Piensa en alguien que hoy hizo algo bueno por ti.",
+        "Pégasela y dile en voz alta por qué."
+      ]
+    },
+    {
+      "id": "grat-el-retrato-de-quien-quiero",
+      "theme": "gratitud",
+      "title": "El retrato de quien quiero",
+      "duration": 6,
+      "players": "1 a 3 jugadores",
+      "ages": "desde 4 años",
+      "materials": [
+        "pinturas",
+        "papel"
+      ],
+      "tags": [
+        "peques"
+      ],
+      "script": "Piensa en una persona a la que quieras mucho. Píntala en el papel como tú la veas, con su pelo y su ropa y su cara. Cuando termines, cuéntanos una cosa que hace esa persona y que a ti te gusta mucho.",
+      "steps": [
+        "Piensa en alguien a quien quieras mucho.",
+        "Píntalo en el papel a tu manera.",
+        "Cuenta una cosa que hace y que te gusta."
+      ]
+    },
+    {
+      "id": "grat-la-cancion-de-las-gracias",
+      "theme": "gratitud",
+      "title": "La canción de las gracias",
+      "duration": 4,
+      "players": "1 a 3 jugadores",
+      "ages": "desde 4 años",
+      "tags": [
+        "peques"
+      ],
+      "script": "Vamos a usar la música de Cumpleaños feliz, que esa nos la sabemos todos. Pero en vez de cumpleaños vamos a cantar gracias por algo de hoy. Gracias por la merienda, gracias por el parque, lo que tú quieras. Cántala entera y luego cámbiala por otra cosa.",
+      "steps": [
+        "Usad la música de Cumpleaños feliz.",
+        "Cantad gracias por algo que ha pasado hoy.",
+        "Repetid la canción cambiando el motivo."
+      ]
+    },
+    {
+      "id": "grat-mi-juguete-favorito",
+      "theme": "gratitud",
+      "title": "Mi juguete favorito",
+      "duration": 4,
+      "players": "1 a 3 jugadores",
+      "ages": "desde 4 años",
+      "materials": [
+        "tus juguetes"
+      ],
+      "tags": [
+        "peques"
+      ],
+      "script": "Ve a buscar el juguete que más quieras de toda la casa y tráelo aquí. Dale un abrazo fuerte y cuéntanos cómo llegó a tus manos, si te acuerdas. Y dinos una cosa que hayáis hecho juntos y que te lo pasaras muy bien.",
+      "steps": [
+        "Trae tu juguete favorito de la casa.",
+        "Dale un abrazo y cuenta cómo llegó a ti.",
+        "Di algo que hayáis hecho juntos."
+      ]
+    },
+    {
+      "id": "grat-las-manos-que-ayudan",
+      "theme": "gratitud",
+      "title": "Las manos que ayudan",
+      "duration": 6,
+      "players": "1 a 3 jugadores",
+      "ages": "desde 4 años",
+      "materials": [
+        "pinturas de dedos",
+        "papel"
+      ],
+      "tags": [
+        "peques"
+      ],
+      "script": "Pon la mano abierta en el papel y píntala por encima, o dibújala por fuera con el dedo mojado. Cuando esté, mira tu mano pintada y di tres cosas buenas que ha hecho hoy esa mano. Coger la cuchara, acariciar a alguien, abrir una puerta.",
+      "steps": [
+        "Pinta tu mano en el papel.",
+        "Mira la mano pintada.",
+        "Di tres cosas buenas que ha hecho hoy."
+      ]
+    },
+    {
+      "id": "viaje-el-tren-de-los-cojines",
+      "theme": "viaje",
+      "title": "El tren de los cojines",
+      "duration": 6,
+      "players": "2 a 3 jugadores",
+      "ages": "desde 4 años",
+      "materials": [
+        "cojines o sillas"
+      ],
+      "tags": [
+        "peques"
+      ],
+      "script": "Colocad cojines o sillas en fila: eso es vuestro tren. Subid, agarraos bien y arrancad haciendo chucuchú todos a la vez. Mientras viajáis, cantad una canción. Cuando la canción se acabe, el tren llega a una estación y el niño decide a qué sitio habéis llegado.",
+      "steps": [
+        "Haced un tren con cojines o sillas en fila.",
+        "Viajad cantando una canción.",
+        "Al acabar la canción, el niño dice a dónde habéis llegado."
+      ]
+    },
+    {
+      "id": "viaje-la-isla-de-la-manta",
+      "theme": "viaje",
+      "title": "La isla de la manta",
+      "duration": 6,
+      "players": "1 a 3 jugadores",
+      "ages": "desde 4 años",
+      "materials": [
+        "una manta o toalla"
+      ],
+      "tags": [
+        "peques"
+      ],
+      "script": "Pon una manta en el suelo: es una isla, y todo lo de alrededor es agua. Súbete y mira bien tu isla. Cuéntanos qué hay en ella, qué animales viven y dónde está la comida. Si algún pie toca el agua, hay que volver a subir corriendo.",
+      "steps": [
+        "Extiende una manta: es una isla rodeada de agua.",
+        "Súbete y cuenta qué hay en tu isla.",
+        "Si un pie toca el agua, vuelve a subir."
+      ]
+    },
+    {
+      "id": "viaje-el-juguete-viajero",
+      "theme": "viaje",
+      "title": "El juguete viajero",
+      "duration": 6,
+      "players": "2 a 3 jugadores",
+      "ages": "desde 4 años",
+      "materials": [
+        "un juguete"
+      ],
+      "tags": [
+        "peques"
+      ],
+      "script": "Un juguete se ha ido de viaje él solo y se ha escondido en algún sitio de la casa. Ayuda a buscarlo por las habitaciones. Cuando lo encontréis, el juguete cuenta con vuestra voz dónde ha estado y qué ha visto en el viaje.",
+      "steps": [
+        "Esconde un juguete: se ha ido de viaje.",
+        "Buscadlo juntos por la casa.",
+        "Al encontrarlo, que cuente dónde ha estado."
+      ]
+    },
+    {
+      "id": "viaje-mapa-de-pegatinas",
+      "theme": "viaje",
+      "title": "Mapa de pegatinas",
+      "duration": 6,
+      "players": "1 a 3 jugadores",
+      "ages": "desde 4 años",
+      "materials": [
+        "pegatinas",
+        "papel"
+      ],
+      "tags": [
+        "peques"
+      ],
+      "script": "Pega cuatro o cinco pegatinas por el papel, separadas unas de otras. Cada pegatina es un sitio de un viaje: una playa, una montaña, la casa de la abuela. Ahora ve de una a otra con el dedo y cuenta qué pasa en cada parada.",
+      "steps": [
+        "Pega unas cuantas pegatinas separadas por el papel.",
+        "Decide qué sitio es cada una.",
+        "Viaja de una a otra con el dedo, contando qué pasa."
+      ]
+    },
+    {
+      "id": "viaje-la-cancion-del-avion",
+      "theme": "viaje",
+      "title": "La canción del avión",
+      "duration": 5,
+      "players": "2 a 3 jugadores",
+      "ages": "desde 4 años",
+      "materials": [
+        "una canción"
+      ],
+      "tags": [
+        "peques"
+      ],
+      "script": "Brazos en cruz, que sois aviones. Despegad muy despacio y volad por la habitación mientras suena la canción, esquivando los muebles. Cuando el adulto diga aterrizar, hay que posarse en el suelo sin ruido, como una pluma.",
+      "steps": [
+        "Brazos en cruz y despegad con la canción.",
+        "Volad por la habitación esquivando los muebles.",
+        "Al oír aterrizar, posaos en el suelo sin ruido."
       ]
     }
   ]
