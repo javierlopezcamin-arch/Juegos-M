@@ -284,20 +284,53 @@
 
   /* ---------------- reproducción: grabación, mp3 o voz del sistema ---------------- */
 
-  var player = { audio: null, url: null, mode: null };
+  /* state: 'idle' (nada sonando), 'playing' o 'paused'.
+     mode: 'audio' (grabación o mp3, con Audio real) o 'speech' (voz del sistema).
+     Pausar no debe perder el sitio: por eso stopPlayback (fin de verdad, se
+     cambia de juego) y pausePlayback (fin momentáneo, se puede seguir) son
+     dos cosas distintas y no la misma llamada disfrazada. */
+  var player = { audio: null, url: null, mode: null, state: 'idle' };
+
+  function updateListenButton() {
+    var btn = $('btn-listen');
+    var label = $('btn-listen-label');
+    btn.classList.toggle('is-on', player.state !== 'idle');
+    if (player.state === 'playing') label.textContent = 'Pausar';
+    else if (player.state === 'paused') label.textContent = 'Seguir';
+    else label.textContent = 'Escuchar';
+  }
 
   function stopPlayback() {
     if (player.audio) { player.audio.pause(); player.audio = null; }
     if (player.url) { URL.revokeObjectURL(player.url); player.url = null; }
     if ('speechSynthesis' in window) { try { speechSynthesis.cancel(); } catch (e) {} }
     player.mode = null;
-    setListening(false);
+    player.state = 'idle';
+    updateListenButton();
   }
 
-  function setListening(on) {
-    var btn = $('btn-listen');
-    btn.classList.toggle('is-on', on);
-    $('btn-listen-label').textContent = on ? 'Parar' : 'Escuchar';
+  function pausePlayback() {
+    if (player.state !== 'playing') return;
+    if (player.mode === 'audio' && player.audio) player.audio.pause();
+    else if (player.mode === 'speech' && 'speechSynthesis' in window) {
+      try { speechSynthesis.pause(); } catch (e) {}
+    }
+    player.state = 'paused';
+    updateListenButton();
+  }
+
+  function resumePlayback() {
+    if (player.state !== 'paused') return;
+    if (player.mode === 'audio' && player.audio) {
+      player.audio.play().catch(function () { stopPlayback(); });
+    } else if (player.mode === 'speech' && 'speechSynthesis' in window) {
+      try { speechSynthesis.resume(); } catch (e) { stopPlayback(); return; }
+    } else {
+      stopPlayback();
+      return;
+    }
+    player.state = 'playing';
+    updateListenButton();
   }
 
   function playBlob(blob) {
@@ -308,6 +341,7 @@
   function playUrl(url, onError) {
     var audio = new Audio(url);
     player.audio = audio;
+    player.mode = 'audio';
     audio.onended = function () { stopPlayback(); };
     audio.onerror = function () {
       player.audio = null;
@@ -317,7 +351,8 @@
       player.audio = null;
       if (onError) onError(); else stopPlayback();
     });
-    setListening(true);
+    player.state = 'playing';
+    updateListenButton();
   }
 
   function pickVoice() {
@@ -336,10 +371,15 @@
     utter.rate = state.settings.rate;
     var voice = pickVoice();
     if (voice) utter.voice = voice;
-    utter.onend = function () { setListening(false); };
-    utter.onerror = function () { setListening(false); };
-    try { speechSynthesis.cancel(); speechSynthesis.speak(utter); setListening(true); }
-    catch (e) { toast('No se pudo leer la consigna'); }
+    utter.onend = function () { stopPlayback(); };
+    utter.onerror = function () { stopPlayback(); };
+    try {
+      speechSynthesis.cancel();
+      speechSynthesis.speak(utter);
+      player.mode = 'speech';
+      player.state = 'playing';
+      updateListenButton();
+    } catch (e) { toast('No se pudo leer la consigna'); }
   }
 
   function listen(game) {
@@ -1022,7 +1062,8 @@
 
     $('btn-listen').addEventListener('click', function () {
       if (!state.game) return;
-      if (player.audio || (window.speechSynthesis && speechSynthesis.speaking)) stopPlayback();
+      if (player.state === 'playing') pausePlayback();
+      else if (player.state === 'paused') resumePlayback();
       else listen(state.game);
     });
 
