@@ -50,23 +50,44 @@
     return dbPromise;
   }
 
+  /* Cada llamada dice si de verdad se ha escrito o solo si no ha reventado:
+     "resuelve sin fallar" y "ha guardado algo" no son la misma pregunta,
+     y confundirlas es como acabó mostrándose "guardado" cuando no lo estaba. */
   function idb(mode, fn) {
     return db().then(function (d) {
-      if (!d) return null;
+      if (!d) return { ok: false, value: null };
       return new Promise(function (resolve) {
-        var tx = d.transaction(STORE, mode);
-        var result = fn(tx.objectStore(STORE));
-        tx.oncomplete = function () { resolve(result && 'result' in result ? result.result : null); };
-        tx.onerror = function () { resolve(null); };
-        tx.onabort = function () { resolve(null); };
+        var tx, result;
+        try {
+          tx = d.transaction(STORE, mode);
+          result = fn(tx.objectStore(STORE));
+        } catch (e) { return resolve({ ok: false, value: null }); }
+        tx.oncomplete = function () { resolve({ ok: true, value: result && 'result' in result ? result.result : null }); };
+        tx.onerror = function () { resolve({ ok: false, value: null }); };
+        tx.onabort = function () { resolve({ ok: false, value: null }); };
       });
-    }).catch(function () { return null; });
+    }).catch(function () { return { ok: false, value: null }; });
   }
 
-  function recGet(id) { return idb('readonly', function (s) { return s.get(id); }); }
-  function recPut(rec) { return idb('readwrite', function (s) { return s.put(rec); }); }
-  function recDelete(id) { return idb('readwrite', function (s) { return s.delete(id); }); }
-  function recKeys() { return idb('readonly', function (s) { return s.getAllKeys(); }); }
+  function recGet(id) {
+    return idb('readonly', function (s) { return s.get(id); }).then(function (r) { return r.value; });
+  }
+  function recKeys() {
+    return idb('readonly', function (s) { return s.getAllKeys(); }).then(function (r) { return r.value || []; });
+  }
+  function recDelete(id) {
+    return idb('readwrite', function (s) { return s.delete(id); }).then(function (r) { return r.ok; });
+  }
+
+  /* Guardar no basta con que la transacción no falle: se comprueba releyendo,
+     porque algunos navegadores dan por completada una escritura que luego,
+     al recargar, no está. Si la relectura no trae el mismo audio, es un fallo. */
+  function recPut(rec) {
+    return idb('readwrite', function (s) { return s.put(rec); }).then(function (r) {
+      if (!r.ok) return false;
+      return recGet(rec.id).then(function (back) { return !!(back && back.blob && back.blob.size === rec.blob.size); });
+    });
+  }
 
   /* ---------------- estado ---------------- */
 
@@ -375,11 +396,16 @@
         rec.recorder = null;
         sound.muted = false;
         if (!state.game || !blob.size) { renderRecorder(); return; }
-        recPut({ id: state.game.id, blob: blob, mime: type, at: Date.now() }).then(function () {
-          return refreshRecorded();
-        }).then(function () {
-          renderRecorder();
-          toast('Grabación guardada en este móvil');
+        recPut({ id: state.game.id, blob: blob, mime: type, at: Date.now() }).then(function (ok) {
+          if (!ok) {
+            renderRecorder();
+            toast('No se pudo guardar la grabación en este dispositivo');
+            return;
+          }
+          return refreshRecorded().then(function () {
+            renderRecorder();
+            toast('Grabación guardada en este móvil');
+          });
         });
       };
       rec.recorder.start();
@@ -1024,9 +1050,11 @@
 
     $('btn-rec-delete').addEventListener('click', function () {
       if (!state.game) return;
-      recDelete(state.game.id).then(function () {
-        refreshRecorded().then(renderRecorder);
-        toast('Grabación borrada');
+      recDelete(state.game.id).then(function (ok) {
+        return refreshRecorded().then(function () {
+          renderRecorder();
+          toast(ok ? 'Grabación borrada' : 'No se pudo borrar la grabación');
+        });
       });
     });
 
@@ -1095,6 +1123,14 @@
     });
 
     try { history.replaceState({ view: 'home' }, ''); } catch (e) {}
+
+    /* Pide almacenamiento persistente donde el navegador lo ofrezca, para que
+       las grabaciones tengan menos papeletas de que el sistema las borre solo
+       por falta de espacio. Ni existe en todos los navegadores ni garantiza
+       nada por sí sola, pero no hace daño intentarlo. */
+    if (navigator.storage && navigator.storage.persist) {
+      navigator.storage.persist().catch(function () {});
+    }
 
     if ('serviceWorker' in navigator && location.protocol !== 'file:') {
       window.addEventListener('load', function () {

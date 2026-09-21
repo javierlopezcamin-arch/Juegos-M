@@ -123,3 +123,8 @@ docs/alexa.md     Cómo sería llevar esto a Alexa
 Las grabaciones y los favoritos viven solo en este móvil, sin copia en ningún servidor.
 Si borras los datos del navegador o desinstalas la app, se van con ellos. Exporta lo que
 quieras conservar.
+
+Si al grabar sale el aviso "No se pudo guardar la grabación en este dispositivo", el motivo
+más probable es estar en una pestaña de navegación privada: ahí Safari e iOS solo mantienen
+el almacenamiento mientras dura esa pestaña y lo descartan al momento, así que la app no
+tiene ninguna forma de conservar nada. Usa una pestaña normal para grabar.
