@@ -98,6 +98,7 @@
     theme: null,
     surprise: false,
     game: null,
+    busy: false,   // hay un giro o una celebración en marcha: ignora un segundo toque
     favorites: load(K.fav, []),
     history: load(K.history, []),
     bag: load(K.bag, {}),
@@ -745,6 +746,7 @@
 
   function resetToSpin() {
     state.game = null;
+    state.busy = false;
     $('card').hidden = true;
     $('actions').hidden = true;
     $('decide').hidden = true;
@@ -763,6 +765,9 @@
   }
 
   function spin() {
+    // Un segundo toque mientras la rueda todavía gira no debe robar un
+    // segundo juego de la bolsa sin que nadie llegue a verlo.
+    if (state.busy) return;
     var themeId = state.theme ? state.theme.id : null;
     if (state.surprise) {
       var t = randomTheme();
@@ -773,6 +778,7 @@
     var game = draw(themeId);
     if (!game) { toast('Este tema todavía no tiene juegos'); return; }
 
+    state.busy = true;
     sound.play('spin');
 
     var reduced = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
@@ -813,6 +819,7 @@
 
   function showGame(game) {
     state.game = game;
+    state.busy = false;
     stopPlayback();
     stopTimer(true);
     $('btn-spin').hidden = true;
@@ -884,8 +891,12 @@
   }
 
   function markDone() {
+    // Igual que en spin(): un segundo toque mientras se celebra la pegatina
+    // no debe volver a contar el mismo juego como jugado otra vez.
+    if (state.busy) return;
     var game = state.game;
     if (!game) return;
+    state.busy = true;
     pushHistory(game.id);
     var total = addSticker(game);
     stopPlayback();
