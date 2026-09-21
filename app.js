@@ -396,18 +396,47 @@
 
   function isRecording() { return !!(rec.recorder && rec.recorder.state === 'recording'); }
 
+  /* En iOS, un <a download> sobre un blob que Safari no sabe previsualizar
+     (como un webm) abre una vista de pantalla completa que se queda ahí
+     parada, sin forma de que la página la cierre: hay que pulsar la X a
+     mano. El panel nativo de compartir no tiene ese problema, así que es
+     la vía preferida siempre que el navegador lo permita con ficheros. */
+  var exportHintShown = false;
+
   function exportRecording(id, title) {
     recGet(id).then(function (found) {
       if (!found || !found.blob) { toast('Aquí no hay ninguna grabación'); return; }
-      var url = URL.createObjectURL(found.blob);
-      var a = document.createElement('a');
-      a.href = url;
-      a.download = (id || slugify(title)) + '.' + extFor(found.mime);
-      document.body.appendChild(a);
-      a.click();
-      document.body.removeChild(a);
-      setTimeout(function () { URL.revokeObjectURL(url); }, 4000);
+      var name = (id || slugify(title)) + '.' + extFor(found.mime);
+
+      if (navigator.share && navigator.canShare) {
+        try {
+          var file = new File([found.blob], name, { type: found.mime || 'application/octet-stream' });
+          if (navigator.canShare({ files: [file] })) {
+            navigator.share({ files: [file], title: title || 'Grabación' }).catch(function () {
+              /* el usuario cierra el panel sin elegir nada: no es un error */
+            });
+            return;
+          }
+        } catch (e) { /* seguimos por la vía clásica */ }
+      }
+
+      downloadBlob(found.blob, name);
     });
+  }
+
+  function downloadBlob(blob, name) {
+    var url = URL.createObjectURL(blob);
+    var a = document.createElement('a');
+    a.href = url;
+    a.download = name;
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    setTimeout(function () { URL.revokeObjectURL(url); }, 4000);
+    if (!exportHintShown) {
+      exportHintShown = true;
+      toast('Si la pantalla se queda en la vista previa, toca la X de arriba para volver');
+    }
   }
 
   function refreshRecorded() {

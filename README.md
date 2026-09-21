@@ -72,15 +72,20 @@ Ajustes.
 
 1. Abre el juego en el móvil, pulsa **Mi voz** y graba. La grabación se guarda en el teléfono
    y a partir de ese momento suena antes que la voz del sistema.
-2. Si quieres conservarla, pulsa **Exportar**: el móvil descarga el fichero tal cual.
-3. Conviértelo y colócalo en el repositorio:
+2. Si quieres conservarla, pulsa **Exportar**: se abre el panel de compartir del móvil
+   para que la guardes donde quieras (Archivos, una nube, por mensaje...).
+3. Si el móvil no ofrece compartir el fichero directamente (pasa en pocos
+   navegadores), Exportar cae en una descarga clásica. En iOS, si la pantalla
+   se queda en una vista previa después de guardar, toca la X de arriba a
+   la izquierda para volver a la app: el archivo ya se ha guardado.
+4. Conviértelo y colócalo en el repositorio:
 
    ```bash
    tools/encode-audio.sh ~/Descargas/conc-cazador-de-sonidos.webm
    ```
 
    Genera `data/audio/<id>.mp3` en mono, 24 kHz y 48 kbps.
-4. Añade `"audio": "data/audio/<id>.mp3"` al juego y súbelo. Ya puedes borrar la grabación
+5. Añade `"audio": "data/audio/<id>.mp3"` al juego y súbelo. Ya puedes borrar la grabación
    local desde Ajustes.
 
 Ese MP3 sirve igual para una futura skill de Alexa, que es justo el formato que admite SSML.
