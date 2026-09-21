@@ -90,6 +90,33 @@ Ajustes.
 
 Ese MP3 sirve igual para una futura skill de Alexa, que es justo el formato que admite SSML.
 
+## Generar todos los audios de golpe con ElevenLabs
+
+Grabar 92 juegos uno a uno es mucho trabajo. Si tienes una clave de
+[ElevenLabs](https://elevenlabs.io), `tools/generate-audio-elevenlabs.mjs` genera y enlaza
+el catálogo entero de una sola vez, en un ordenador con Node 18 o más nuevo:
+
+```bash
+export ELEVENLABS_API_KEY="tu_clave"
+export ELEVENLABS_VOICE_ID="id_de_una_voz_en_español"   # Voice Library, Copy Voice ID
+node tools/generate-audio-elevenlabs.mjs
+```
+
+Genera un MP3 por juego en `data/audio/`, lo convierte a mono, 24 kHz y 48 kbps si hay
+ffmpeg instalado, y deja escrito el campo `"audio"` de cada uno en `data/games.json`. Se
+puede parar y volver a lanzar sin gastar de más: solo genera lo que todavía no tenga
+audio. Con `--only=id1,id2` se prueba primero con uno o dos, y con `--force` se
+regenera todo. Al terminar, valida y sube como cualquier otro cambio:
+
+```bash
+node tools/check-games.mjs
+git add data/audio data/games.json && git commit -m "Audios generados con ElevenLabs" && git push
+```
+
+El catálogo entero son unos 16 000 caracteres, así que el plan gratuito de ElevenLabs
+(10 000 al mes) no llega para generarlo todo de golpe: hace falta un plan de pago o
+repartirlo en dos meses con `--only`.
+
 ## Publicar
 
 En **Settings → Pages** del repositorio, elige la rama y la carpeta raíz. La app queda en
