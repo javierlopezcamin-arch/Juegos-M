@@ -138,6 +138,82 @@
     return inner ? '<svg viewBox="0 0 24 24" aria-hidden="true">' + inner + '</svg>' : '';
   }
 
+  /* ---------------- físicas del tótem ----------------
+     Un muelle amortiguado, nada más: al tocar, el elemento se inclina hacia
+     el dedo y se hunde un poco; mientras arrastras sin soltar, lo sigue; al
+     soltar, vuelve a su sitio con un pequeño rebote en vez de saltar en
+     seco. Es el mismo truco que las tarjetas "tilt" de cualquier app, hecho
+     a mano en unas pocas líneas para no meter una librería por esto. */
+  var REDUCE_MOTION = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  function attachSquish(el, opts) {
+    if (!el || REDUCE_MOTION || typeof PointerEvent === 'undefined') return;
+    opts = opts || {};
+    var maxTilt = opts.maxTilt != null ? opts.maxTilt : 9;   // grados, como máximo
+    var pressScale = opts.pressScale != null ? opts.pressScale : 0.96;
+    var stiffness = 220, damping = 17;
+
+    var tx = 0, ty = 0, ts = 1;   // inclinación X, inclinación Y, escala: valor actual
+    var vx = 0, vy = 0, vs = 0;   // sus velocidades
+    var gx = 0, gy = 0, gs = 1;   // hacia dónde tira el muelle ahora mismo
+    var raf = null, last = 0, pressed = false;
+
+    function apply() {
+      if (tx === 0 && ty === 0 && ts === 1) { el.style.transform = ''; return; }
+      el.style.transform = 'perspective(600px) rotateX(' + (-ty).toFixed(2) + 'deg) ' +
+        'rotateY(' + tx.toFixed(2) + 'deg) scale(' + ts.toFixed(4) + ')';
+    }
+
+    function step(now) {
+      var dt = last ? Math.min((now - last) / 1000, 0.032) : 0.016;
+      last = now;
+
+      vx += (-stiffness * (tx - gx) - damping * vx) * dt; tx += vx * dt;
+      vy += (-stiffness * (ty - gy) - damping * vy) * dt; ty += vy * dt;
+      vs += (-stiffness * (ts - gs) - damping * vs) * dt; ts += vs * dt;
+      apply();
+
+      var settled = !pressed &&
+        Math.abs(vx) < 0.01 && Math.abs(vy) < 0.01 && Math.abs(vs) < 0.0006 &&
+        Math.abs(tx - gx) < 0.03 && Math.abs(ty - gy) < 0.03 && Math.abs(ts - gs) < 0.0006;
+      if (settled) { tx = 0; ty = 0; ts = 1; apply(); raf = null; return; }
+      raf = requestAnimationFrame(step);
+    }
+
+    function setTarget(x, y, scale) {
+      gx = x; gy = y; gs = scale;
+      if (!raf) { last = 0; raf = requestAnimationFrame(step); }
+    }
+
+    function tiltFor(e) {
+      var r = el.getBoundingClientRect();
+      var px = Math.max(0, Math.min(1, (e.clientX - r.left) / r.width)) - 0.5;
+      var py = Math.max(0, Math.min(1, (e.clientY - r.top) / r.height)) - 0.5;
+      return { x: px * maxTilt * 2, y: py * maxTilt * 2 };
+    }
+
+    el.addEventListener('pointerdown', function (e) {
+      if (e.pointerType === 'mouse' && e.button !== 0) return;
+      pressed = true;
+      var p = tiltFor(e);
+      setTarget(p.x, p.y, pressScale);
+      try { el.setPointerCapture(e.pointerId); } catch (err) { /* no pasa nada */ }
+    });
+    el.addEventListener('pointermove', function (e) {
+      if (!pressed) return;
+      var p = tiltFor(e);
+      setTarget(p.x, p.y, pressScale);
+    });
+    function release() {
+      if (!pressed) return;
+      pressed = false;
+      setTarget(0, 0, 1);
+    }
+    el.addEventListener('pointerup', release);
+    el.addEventListener('pointercancel', release);
+    el.addEventListener('lostpointercapture', release);
+  }
+
   var toastTimer = null;
   function toast(message) {
     var el = $('toast');
@@ -728,6 +804,7 @@
       btn.querySelector('.theme__name').textContent = theme.name;
       btn.querySelector('.theme__sub').textContent = theme.subtitle;
       btn.addEventListener('click', function () { openTheme(theme.id, false); });
+      attachSquish(btn);
       wrap.appendChild(btn);
     });
   }
@@ -1040,6 +1117,8 @@
       sound.unlock();
       if (btn.getAttribute('data-sound') !== 'off') sound.play('tap');
     }, true);
+
+    attachSquish($('btn-surprise'), { maxTilt: 5, pressScale: 0.95 });
 
     $('btn-surprise').addEventListener('click', function () {
       var t = randomTheme();
